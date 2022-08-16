@@ -10,7 +10,7 @@
     </div>
   </div>
 
-  <form action="https://formsubmit.co/c2108a5bb15a8e233f4479c680186dbe" method="POST">
+  <form action="https://formsubmit.co/samcdonovan@gmail.com" method="POST">
     <!--Honeypot-->
     <input type="text" name="_honey" style="display: none" />
 
