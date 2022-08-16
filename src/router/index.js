@@ -1,0 +1,35 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../components/Home.vue'
+import About from '../components/About.vue'
+import Contact from '../components/Contact.vue'
+import Projects from '../components/Projects.vue'
+
+const routes = [
+    {
+        path:"/",
+        name: "HomePage",
+        component: Home
+    },
+    {
+        path: "/about",
+        name: "AboutPage",
+        component: About
+    },
+    {
+        path: "/contact",
+        name: "ContactPage",
+        component: Contact
+    },
+    {
+        path: "/projects",
+        name: "ProjectsPage",
+        component: Projects
+    }
+]
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
+})
+
+export default router
