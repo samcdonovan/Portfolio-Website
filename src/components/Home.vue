@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>Hey there!
       I'm Sam, and you've stumbled across my portfolio website!
     </h1>

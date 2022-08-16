@@ -27,7 +27,7 @@
   </p>
 
   <p>To see more details about the above projects (amongst other projects), please visit the 
-        <router-link to="/projects">Projects page</router-link> of this website.</p>
+        <router-link id="projects-link" to="/projects">Projects page</router-link> of this website.</p>
   <h2>Hobbies And Interests</h2>
 </template>
 
@@ -39,3 +39,9 @@ export default {
   },
 };
 </script>
+<style scoped>
+
+#projects-link:visited {
+  color: blue;
+}
+</style>

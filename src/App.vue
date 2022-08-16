@@ -25,7 +25,12 @@ html {
   padding: 0;
   border-color: green;
 }
-
+.header {
+  width: 80%;
+  height: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -81,6 +86,7 @@ transform: translateX(-50%);
   margin-right: auto;
   text-decoration: none;
   text-align: center;
+  color:black;
 }
 
 .menu-item:visited {
