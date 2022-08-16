@@ -22,8 +22,10 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0;
-  border-color: green;
+}
+
+body{
+  padding-bottom: 50px;
 }
 .header {
   width: 80%;

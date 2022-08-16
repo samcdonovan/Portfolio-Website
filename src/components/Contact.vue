@@ -28,7 +28,7 @@
     <!--Disable captcha-->
     <input type="hidden" name="_captcha" value="false" />
 
-    <input type="hidden" name="_next" value="https://samcdonovan.netlify.app/s">
+    <input type="hidden" name="_next" value="https://samcdonovan.netlify.app/success">
     <div id="form-container">
       <p>
         Want to write me an email? Fill in the form below and write me a

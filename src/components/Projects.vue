@@ -149,19 +149,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*
-  position:relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-auto-flow: row;
-  gap: 1rem;
-  left: 50%;
-  transform: translate(-50%);
-  border-style:solid;
-  text-align: center;
-  justify-content: center;
-  */
 }
 .technologies span {
   flex: 0 0 calc(16.66% - 20px);

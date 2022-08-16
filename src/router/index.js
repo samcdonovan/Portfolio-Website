@@ -27,7 +27,7 @@ const routes = [
         component: Projects
     },
     {
-        path: "/s",
+        path: "/success",
         name: "SuccessPage",
         component: Success
     }
