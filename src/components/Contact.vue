@@ -7,10 +7,21 @@
       <p class="info-p"><b>Phone</b> +44 7703 689 261</p>
       <p class="info-p"><b>Email</b> samcdonovan@gmail.com</p>
       <p class="info-p"><b>Location</b> London, UK</p>
+      <div id="socials">
+        <a href="https://linkedin.com/in/samuel-c-donovan"
+          ><img src="../assets/LI-In-Bug.png"
+        /></a>
+        <a href="https://github.com/samcdonovan"
+          ><img src="../assets/GitHub-Mark-120px-plus.png"
+        /></a>
+      </div>
     </div>
   </div>
 
-  <form action="https://formsubmit.co/samcdonovan@gmail.com" method="POST">
+  <form
+    action="https://formsubmit.co/c2108a5bb15a8e233f4479c680186dbe"
+    method="POST"
+  >
     <!--Honeypot-->
     <input type="text" name="_honey" style="display: none" />
 
@@ -93,7 +104,7 @@ export default {
 .contact-header {
   display: flex;
   width: 80%;
-  height: 30vh;
+  height: 40vh;
   border-style: solid;
   margin-left: auto;
   margin-right: auto;
@@ -114,6 +125,15 @@ export default {
   padding: 1%;
 }
 #contact-info p {
+  float: left;
+}
+#contact-info img {
+  width: 15%;
+  height: 15%;
+  padding-left: 5%;
+}
+#socials {
+  position: relative;
   float: left;
 }
 form {

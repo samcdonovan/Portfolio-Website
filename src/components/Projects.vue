@@ -9,7 +9,8 @@
   <div class="project-grid">
     <div class="project">
       <h3>NBA Data Visualization Website</h3>
-      <p>Languages: JavaScrip TypeScript</p>
+      <p>Languages: <span class="js">JavaScript</span> <span class="ts">TypeScript</span></p>
+      <p>Technologies/Frameworks: <span class="special">AWS</span> <span class="other">S3 Buckets</span></p>
     </div>
     <div class="project"></div>
     <div class="project"></div>
@@ -36,7 +37,11 @@ export default {
   margin-right:auto;
   margin-left: auto;
 }
-
+.project span{
+  border-style: solid;
+  border-radius: 10px;
+  padding: 1%;
+}
 
 .header p {
   border-bottom: 2px solid black;
