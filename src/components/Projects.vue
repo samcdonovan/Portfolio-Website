@@ -9,7 +9,7 @@
   <div class="project-grid">
     <div class="project">
       <h3>NBA Data Visualization Website</h3>
-      <p>Languages: JavaScrip TypeScript
+      <p>Languages: JavaScrip TypeScript</p>
     </div>
     <div class="project"></div>
     <div class="project"></div>
