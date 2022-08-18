@@ -1,5 +1,5 @@
 <template>
-  <div class="header contact-header">
+  <div class="contact-header">
     <div id="contact-me">
       <p>CONTACT ME</p>
     </div>
@@ -123,7 +123,7 @@ export default {
 @media (max-width: 960px) {
   .contact-header {
     display: inline-block;
-    width:80%;
+    width:90%;
     height:fit-content;
     margin-left:auto;
     margin-right:auto;
