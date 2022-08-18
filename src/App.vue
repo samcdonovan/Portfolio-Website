@@ -66,52 +66,11 @@ html {
   height: 100%;
 }
 body {
-  font-family: Arial sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 1980px;
-  /*min-height: 100%;
-    */
-  display: flex;
-  justify-content: stretch;
-  align-items: stretch;
-}
-#app {
-  min-height: 100%;
-  height: 100%;
-  width: inherit;
-  position: relative;
-  padding-bottom: 10vh;
-  justify-content: stretch;
-  align-items: stretch;
-}
-
-/*
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;  
-  border-style:solid;
-}
-*/
-/*
-html {
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-}
-body {
-  font-family: Brush Script MT (cursive), Avenir, Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: 1980px;
-  min-height: 100%;
-  height:100%;
-
   background-image: linear-gradient(
     to bottom,
     #ecc042,
@@ -122,48 +81,23 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-
-#app {
-  height: 100vh;
-  width: inherit;
-  min-height:100%;
-
-  position: relative;
-  -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-border-style:solid;
-}*/
-/*
-body,
-html {
-    margin:0;
-  padding:0;
-  height:100%;
-  
-  font-size: calc(15px + 0.390625vw);
-  height: 100vh;
-  width: 100%;
-  margin: 0px;
-  padding:0px;
-
-  
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
 }
 #app {
-  position:absolute;
+  min-height: 100%;
   font-family: Brush Script MT (cursive), Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
- 
-  height: 100vh;
-  width:100%;
-  border-style:solid;
+  height: 100%;
+  width: inherit;
+  position: relative;
+  padding-bottom: 10vh;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
-*/
 .header {
   width: 80%;
   height: 20vh;
@@ -215,7 +149,7 @@ html {
   left: 5%;
   margin-top: 5%;
   position: relative;
-  z-index:1;
+  z-index: 1;
 }
 .dropdown-links {
   border-style: solid;

@@ -188,7 +188,7 @@ export default {
 }
 .header p {
   border-bottom: 2px solid black;
-  width: 60%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 1.5%;

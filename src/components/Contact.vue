@@ -116,9 +116,34 @@ export default {
   font-size: 2.5rem;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 50%;
 }
+@media (max-width: 960px) {
+  .contact-header {
+    display: inline-block;
+    width:80%;
+    height:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15%;
+  }
 
+  #contact-info {
+    border-left: none;
+    min-width:90%;
+    height:fit-content;
+  }
+
+  #contact-info p {
+    width:100%;
+    height:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+
+  }
+}
 #contact-info {
   width: 40%;
   border-left: solid;
