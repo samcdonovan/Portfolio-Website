@@ -215,6 +215,7 @@ html {
   left: 5%;
   margin-top: 5%;
   position: relative;
+  z-index:1;
 }
 .dropdown-links {
   border-style: solid;

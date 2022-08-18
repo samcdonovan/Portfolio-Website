@@ -8,7 +8,7 @@
       <img src="../assets/bg-me.png" />
     </div>
   
-  <div id="bottom"></div>
+<!--  <div id="bottom"></div>-->
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
 #img-me {
   position:relative;
   width: 49%;
-  float: right;
+  /*float: right;*/
 }
 #bottom {
   position: relative;
