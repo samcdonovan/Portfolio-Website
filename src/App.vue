@@ -4,12 +4,16 @@
       <p>Samuel Donovan</p>
     </div>
     <div class="menu">
-      <router-link class="menu-item" to="/">HOME</router-link>
-      <router-link class="menu-item" to="/about">ABOUT</router-link>
+      <router-link class="menu-item" to="/"><span>HOME</span></router-link>
+      <router-link class="menu-item" to="/about"
+        ><span>ABOUT</span></router-link
+      >
       <!--<img class="menu-item" src="./assets/logo.png" />-->
-      <router-link class="menu-item" to="/projects">PROJECTS</router-link>
+      <router-link class="menu-item" to="/projects"
+        ><span>PROJECTS</span></router-link
+      >
       <router-link class="menu-item" id="last" to="/contact"
-        >CONTACT</router-link
+        ><span>CONTACT</span></router-link
       >
     </div>
   </div>
@@ -74,20 +78,11 @@ body {
   padding: 0;
   width: 100%;
   max-width: 1980px;
-  background-image: linear-gradient(
-    to right top,
-    #99efb3,
-    #7feed8,
-    #83e8f1,
-    #a0e0fb,
-    #bed8f5
-  );
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
   justify-content: stretch;
   align-items: stretch;
 }
+
 #app {
   min-height: 100%;
   font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;
@@ -103,14 +98,12 @@ body {
 
 .header {
   width: 80%;
-  height: 20vh;
-  border-style: solid;
+  height: fit-content;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 3%;
   margin-bottom: 3%;
-  font-size: 2rem;
 }
+
 .title {
   margin-left: auto;
   margin-right: auto;
@@ -121,21 +114,34 @@ body {
 }
 
 #nav-bar {
-  margin-top:1%;
+  padding-top: 1%;
+  background-image: linear-gradient(
+    to right top,
+    #99efb3,
+    #7feed8,
+    #83e8f1,
+    #a0e0fb,
+    #bed8f5
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #site-title {
-  font-size:10vh;
-  height:10vh;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 9vh;
+  height: 10vh;
 }
 
 #site-title p {
   margin: 0;
 }
 .menu {
-  width: 100%;
-  height: 16vh;
+  width: 80%;
+  height: 10vh;
   display: flex;
   margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu img {
@@ -156,6 +162,19 @@ body {
   text-decoration: none;
   text-align: center;
   color: black;
+}
+.menu-item:hover span {
+  color: rgb(111, 90, 230);
+}
+
+.router-link-exact-active {
+  color: blue;
+}
+.menu-item:hover,
+.menu-item.router-link-active,
+.menu-item.router-link-exact-active {
+  color: blue;
+  cursor: pointer;
 }
 
 .menu-item:visited {

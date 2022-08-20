@@ -4,9 +4,15 @@
       <p>CONTACT ME</p>
     </div>
     <div id="contact-info">
-      <p class="info-p"><b>Phone</b> +44 7703 689 261</p>
-      <p class="info-p"><b>Email</b> samcdonovan@gmail.com</p>
-      <p class="info-p"><b>Location</b> London, UK</p>
+      <p class="info-p">
+        <span class="info-type"><b>Phone</b></span> +44 7703 689 261
+      </p>
+      <p class="info-p">
+        <span class="info-type"><b>Email</b></span> samcdonovan@gmail.com
+      </p>
+      <p class="info-p">
+        <span class="info-type"><b>Location</b></span> London, UK
+      </p>
       <div id="socials">
         <a href="https://linkedin.com/in/samuel-c-donovan"
           ><img src="../assets/LI-In-Bug.png"
@@ -108,12 +114,12 @@ export default {
 
 #contact-me {
   width: 60%;
-  font-size: 2.5rem;
+  font-size: 7vh;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  height: 50%;
+  height: 45%;
 }
 @media (max-width: 960px) {
   .contact-header {
@@ -151,6 +157,10 @@ export default {
   height: 15%;
   padding-left: 5%;
 }
+.info-type {
+  border-right: solid;
+  padding-right: 1.5%;
+}
 #socials {
   position: relative;
   float: left;
@@ -170,7 +180,6 @@ form {
   margin-right: auto;
 }
 
-/* Add styles to 'input' and 'textarea' selectors */
 input[type="text"],
 input[type="email"],
 textarea {

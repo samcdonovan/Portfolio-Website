@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <p class="title">PROJECTS</p>
-    <p>
+    <p class="header-desc">
       Here are some of my favourite and most interesting projects that I
       completed whilst studying Computer Science.
     </p>
@@ -186,7 +186,7 @@ export default {
   width: 35%;
   height: 35%;
 }
-.header p {
+.header-desc {
   border-bottom: 2px solid black;
   width: 80%;
   margin-right: auto;
