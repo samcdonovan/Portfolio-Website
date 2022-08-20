@@ -35,7 +35,6 @@
       </p>
       <div id="name-fields">
         <div id="name-container">
-          <!--<label for="firstName"></label><span class="required">*</span>-->
           <input
             type="text"
             placeholder="First name"
@@ -46,7 +45,6 @@
         </div>
 
         <div id="surname=container">
-          <!--<label for="surname"></label><span class="required">*</span>-->
           <input
             type="text"
             placeholder="Surname"
@@ -58,8 +56,6 @@
       </div>
 
       <div class="input-container">
-        <!--<label for="subject"></label>
-    <span class="required">*</span>-->
         <input
           type="text"
           placeholder="Subject"
@@ -68,7 +64,6 @@
           required="required"
         />
       </div>
-      <!--<label for="email">Email Address:</label><span class="required">*</span>-->
       <div class="input-container">
         <input
           type="email"
@@ -123,25 +118,24 @@ export default {
 @media (max-width: 960px) {
   .contact-header {
     display: inline-block;
-    width:90%;
-    height:fit-content;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:15%;
+    width: 90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
   }
 
   #contact-info {
     border-left: none;
-    min-width:90%;
-    height:fit-content;
+    min-width: 90%;
+    height: fit-content;
   }
 
   #contact-info p {
-    width:100%;
-    height:fit-content;
-    margin-left:auto;
-    margin-right:auto;
-
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 #contact-info {

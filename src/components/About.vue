@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1>ABOUT ME</h1>
+    <p class="title">ABOUT ME</p>
   </div>
 
   Hey there, my name is Samuel Donovan and this is my personal/portfolio

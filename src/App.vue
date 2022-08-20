@@ -1,12 +1,18 @@
 <template>
-  <div class="menu">
-    <router-link class="menu-item" to="/">HOME</router-link>
-    <router-link class="menu-item" to="/about">ABOUT</router-link>
-    <img class="menu-item" src="./assets/logo.png" />
-    <router-link class="menu-item" to="/projects">PROJECTS</router-link>
-    <router-link class="menu-item" id="last" to="/contact">CONTACT</router-link>
+  <div id="nav-bar">
+    <div id="site-title">
+      <p>Samuel Donovan</p>
+    </div>
+    <div class="menu">
+      <router-link class="menu-item" to="/">HOME</router-link>
+      <router-link class="menu-item" to="/about">ABOUT</router-link>
+      <!--<img class="menu-item" src="./assets/logo.png" />-->
+      <router-link class="menu-item" to="/projects">PROJECTS</router-link>
+      <router-link class="menu-item" id="last" to="/contact"
+        >CONTACT</router-link
+      >
+    </div>
   </div>
-
   <div class="phone-menu">
     <button v-on:click="openDropdown()" class="drop-button">Menu</button>
     <div id="dropdown" class="dropdown-links">
@@ -25,19 +31,16 @@
 <script>
 export default {
   name: "App",
+
+  /* handles onClicks on the page to toggle the dropdown menu */
   mounted: function () {
-    // Attach event listener to the root vue element
-    //this.$el.addEventListener("click", this.onClick);
-    // Or if you want to affect everything
     document.addEventListener("click", this.onClick);
   },
   beforeUnmount: function () {
-    //this.$el.removeEventListener("click", this.onClick);
     document.removeEventListener("click", this.onClick);
   },
   methods: {
     openDropdown() {
-      console.log("hey");
       document.getElementById("dropdown").classList.toggle("show");
     },
 
@@ -72,12 +75,12 @@ body {
   width: 100%;
   max-width: 1980px;
   background-image: linear-gradient(
-    to bottom,
-    #ecc042,
-    #f0ce60,
-    #f4dc7d,
-    #f9ea99,
-    #fff7b5
+    to right top,
+    #99efb3,
+    #7feed8,
+    #83e8f1,
+    #a0e0fb,
+    #bed8f5
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -87,7 +90,7 @@ body {
 }
 #app {
   min-height: 100%;
-  font-family: Brush Script MT (cursive), Avenir, Helvetica, Arial, sans-serif;
+  font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -101,22 +104,38 @@ body {
 .header {
   width: 80%;
   height: 20vh;
+  border-style: solid;
   margin-right: auto;
   margin-left: auto;
   margin-top: 3%;
   margin-bottom: 3%;
+  font-size: 2rem;
 }
-.header h1 {
+.title {
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   width: fit-content;
+  font-size: 10vh;
+}
+
+#nav-bar {
+  margin-top:1%;
+}
+#site-title {
+  font-size:10vh;
+  height:10vh;
+}
+
+#site-title p {
+  margin: 0;
 }
 .menu {
   width: 100%;
   height: 16vh;
   display: flex;
   margin-bottom: 2%;
-  margin-top: 2%;
 }
 
 .menu img {
@@ -126,9 +145,10 @@ body {
 }
 
 .menu-item {
-  width: 20%;
-  font-size: 120%;
-  border-style: solid;
+  width: 15%;
+  font-size: 1.25rem;
+  border-bottom: solid;
+  padding-bottom: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
