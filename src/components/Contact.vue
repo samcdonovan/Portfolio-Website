@@ -116,8 +116,8 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
-  margin-top:2%;
-  border-radius:5px;
+  margin-top: 2%;
+  border-radius: 5px;
 }
 
 #contact-me {
@@ -128,13 +128,14 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
+  color: #eae7dc;
 }
 
 #info-paras {
   width: 70%;
   height: 80%;
   float: left;
-  margin-left:0%;
+  margin-left: 0%;
   margin-top: 6%;
   margin-bottom: auto;
 }
@@ -155,7 +156,7 @@ export default {
   width: 55%;
   height: 55%;
   padding-left: 5%;
-  margin-top:5%;
+  margin-top: 5%;
 }
 .info-type {
   border-right: solid;
@@ -164,14 +165,14 @@ export default {
 #socials {
   height: 100%;
   width: 25%;
-  margin-right:5%;
+  margin-right: 5%;
   position: relative;
   float: right;
 }
-#socials div{
-  width:100%;
-  padding:1%;
-  margin-top:10%;
+#socials div {
+  width: 100%;
+  padding: 1%;
+  margin-top: 10%;
 }
 form {
   border-style: solid;
@@ -180,7 +181,7 @@ form {
   margin-right: auto;
   padding: 1%;
   bottom: 5%;
-  border-radius:5px;
+  border-radius: 5px;
 }
 
 #form-container {

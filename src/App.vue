@@ -6,7 +6,7 @@
     <div class="menu">
       <router-link class="menu-item" to="/"><span>HOME</span></router-link>
       <router-link class="menu-item" to="/about"
-        ><span>ABOUT</span></router-link
+        ><span>ABOUT ME</span></router-link
       >
       <!--<img class="menu-item" src="./assets/logo.png" />-->
       <router-link class="menu-item" to="/projects"
@@ -81,11 +81,11 @@ body {
   display: flex;
   justify-content: stretch;
   align-items: stretch;
-  background-color: #88bdbc;
-   padding-bottom: 10vh;
+  background-color: #8dbdbc;
+  padding-bottom: 10vh;
 }
 
-#app{
+#app {
   min-height: 100%;
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
@@ -94,8 +94,8 @@ body {
   height: 100%;
   width: inherit;
   position: relative;
-
   justify-content: stretch;
+  font-size: 125%;
   align-items: stretch;
 }
 
@@ -105,7 +105,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3%;
-  margin-top:2%;
+  margin-top: 2%;
 }
 
 .title {
@@ -119,9 +119,9 @@ body {
 
 #nav-bar {
   padding-top: 1%;
-  border-bottom: 3px solid #254e58;
-  padding-bottom:0;
-  margin-bottom:0;
+  border-bottom: 2px solid #254e58;
+  padding-bottom: 0;
+  margin-bottom: 0;
   /*
   background-image: linear-gradient(
     to top,
@@ -143,8 +143,9 @@ body {
 #site-title p {
   margin: 0;
 }
-#site-title p, .title  {
- color:#eae7dc;
+#site-title p,
+.title {
+  color: #eae7dc;
 }
 .menu {
   width: 65%;
@@ -156,7 +157,7 @@ body {
 
 .menu-item {
   width: 15%;
-  font-size: 1.25rem;
+  font-size: 3.5vh;
   padding-bottom: 0.5%;
   margin-top: auto;
   margin-bottom: auto;

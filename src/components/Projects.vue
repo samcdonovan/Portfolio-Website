@@ -58,13 +58,16 @@
       </div>
     </div>
     <div class="project">
-      <h3>Machine Learning Categoriser for UCI digits</h3>
+      <h3>Machine Learning Categoriser for handwritten digits (UCI)</h3>
       <p>Languages: <span class="java">Java</span></p>
       <div class="description">
         <p>
-          Implemented Nearest Neighbour (98.3%), Genetic Algorithm (~70.4%) and
-          Multilayer Perceptron (~93.6%) solutions for categorising the UCI
-          digits task.
+          The UCI digits is a data set consisting of 5620 handwritten digits. I
+          implemented 3 approaches for categorising these digits: Nearest
+          Neighbour (98.3% acc.), Genetic Algorithm (Tournament Selection,
+          Uniform Crossover, ~70.4% acc.) and Multilayer Perceptron (Sigmoid
+          Transfer/Activation, MSE loss, ~93.6% acc.). Each of these were ran
+          with two-fold tests for the 5620 digits.
         </p>
       </div>
     </div>
@@ -99,8 +102,10 @@
       <p>Languages: <span class="java">Java</span></p>
       <div class="description">
         <p>
-          Implemented Held-Karp, an exact algorithm for the TSP that runs in
-          less than 20 seconds for 20 cities.
+          Implemented Held-Karp, a dynamic programming exact algorithm for the
+          TSP that runs in less than 20 seconds for 20 cities. Also implemented
+          a custom Hash Table implementation to provide O(1) get and put
+          functions.
         </p>
       </div>
     </div>
@@ -115,6 +120,16 @@
       <div class="technologies">
         <span class="db">MongoDB</span>
       </div>
+      <div class="description">
+        <p>
+          Mock e-commerce website for trainers. Allowed the user to sign up for
+          an account, add items to their basket, and "purchase" those items
+          (this data was stored in a local MongoDB database). A Content
+          Management System (CMS) was implemented for this project, allowing
+          "staff" to manually check stock counts, change stock details and
+          view/edit customer purchase history.
+        </p>
+      </div>
     </div>
     <div class="project">
       <h3>Tetris Game Website</h3>
@@ -122,6 +137,13 @@
         Languages: <span class="js">JavaScript</span>
         <span class="php">PHP</span>
       </p>
+      <div class="description">
+        <p>
+          Created a local website and a JavaScript Tetris which can be played on
+          the website. It also allows users to sign up for an account (stored in
+          session storage) and save their high scores on a leaderboard.
+        </p>
+      </div>
     </div>
     <div class="project">
       <h3>Hashtable Library System</h3>
@@ -130,6 +152,15 @@
       Technologies/Frameworks:
       <div class="technologies">
         <span class="other">Catch2 (Testing)</span>
+      </div>
+      <div class="description">
+        <p>
+          Implemented a Hash Table from scratch with linear probing for
+          collision resolution and a custom String hash function. Works on a
+          simple "library system", where it can store, retrieve and delete books
+          from the system and can realistically provide O(1) time complexity and
+          good space complexity if the number of books is of a reasonable size.
+        </p>
       </div>
     </div>
   </div>
@@ -161,17 +192,17 @@ export default {
   height: 100%;
 }
 @media (max-width: 960px) {
-  .project-grid{
-  grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
   }
 }
-h3{
- color:#eae7dc;
+h3 {
+  color: #eae7dc;
 }
 .project {
   position: relative;
   border-style: solid;
-  background-color: rgba(105, 164, 120, 0.367);
+  background-color: rgba(105, 105, 164, 0.367);
   height: 60vh;
   padding: 10px;
   transition: transform 0.2s;
