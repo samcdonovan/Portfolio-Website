@@ -81,11 +81,14 @@ body {
   display: flex;
   justify-content: stretch;
   align-items: stretch;
+  background-color: #88bdbc;
+ 
 }
 
 #app {
   min-height: 100%;
-  font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;
+  font-family: "Lucida Console", "Courier New", monospace;
+  /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
@@ -102,6 +105,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3%;
+  margin-top:2%;
 }
 
 .title {
@@ -110,19 +114,24 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   width: fit-content;
-  font-size: 10vh;
+  font-size: 7vh;
 }
 
 #nav-bar {
   padding-top: 1%;
+  border-bottom: 3px solid #254e58;
+  padding-bottom:0;
+  margin-bottom:0;
+  /*
   background-image: linear-gradient(
-    to right top,
-    #99efb3,
-    #7feed8,
-    #83e8f1,
-    #a0e0fb,
-    #bed8f5
+    to top,
+    #eee2dc,
+    #eedbd2,
+    #eed5c9,
+    #edcec0,
+    #edc7b7
   );
+  */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -131,15 +140,16 @@ body {
   font-size: 9vh;
   height: 10vh;
 }
-
 #site-title p {
   margin: 0;
 }
+#site-title p, .title  {
+ color:#eae7dc;
+}
 .menu {
-  width: 80%;
+  width: 65%;
   height: 10vh;
   display: flex;
-  margin-bottom: 2%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -153,7 +163,6 @@ body {
 .menu-item {
   width: 15%;
   font-size: 1.25rem;
-  border-bottom: solid;
   padding-bottom: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
@@ -163,16 +172,18 @@ body {
   text-align: center;
   color: black;
 }
-.menu-item:hover span {
+.menu-item span {
+  border-bottom: solid;
+  padding: 1%;
+}
+.menu-item:hover span,
+.menu-item.router-link-active,
+.menu-item.router-link-exact-active,
+.menu-item:active span {
   color: rgb(111, 90, 230);
 }
 
-.router-link-exact-active {
-  color: blue;
-}
-.menu-item:hover,
-.menu-item.router-link-active,
-.menu-item.router-link-exact-active {
+.menu-item:hover {
   color: blue;
   cursor: pointer;
 }

@@ -1,11 +1,10 @@
 <template>
-  <!--<div class="home-wrapper">-->
     <div id="intro">
       <h1>Hey there!</h1>
       <h2>I'm Sam, and you've stumbled across my portfolio website!</h2>
     </div>
     <div id="img-me">
-      <img src="../assets/bg-me.png" />
+      <img src="../assets/bg-me-new.png"/>
     </div>
   
 <!--  <div id="bottom"></div>-->
@@ -28,7 +27,11 @@ export default {
 #img-me {
   position:relative;
   width: 49%;
-  /*float: right;*/
+  float:right;
+}
+#img-me img{
+  width:80%;
+  height:80%;
 }
 #bottom {
   position: relative;

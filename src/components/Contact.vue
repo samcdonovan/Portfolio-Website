@@ -4,22 +4,28 @@
       <p>CONTACT ME</p>
     </div>
     <div id="contact-info">
-      <p class="info-p">
-        <span class="info-type"><b>Phone</b></span> +44 7703 689 261
-      </p>
-      <p class="info-p">
+      <div id="info-paras">
+        <p class="info-p">
+          <span class="info-type"><b>Phone</b></span> +44 7703 689 261
+        </p>
+        <!--<p class="info-p">
         <span class="info-type"><b>Email</b></span> samcdonovan@gmail.com
-      </p>
-      <p class="info-p">
-        <span class="info-type"><b>Location</b></span> London, UK
-      </p>
+      </p>-->
+        <p class="info-p">
+          <span class="info-type"><b>Location</b></span> London, UK
+        </p>
+      </div>
       <div id="socials">
-        <a href="https://linkedin.com/in/samuel-c-donovan"
-          ><img src="../assets/LI-In-Bug.png"
-        /></a>
-        <a href="https://github.com/samcdonovan"
-          ><img src="../assets/GitHub-Mark-120px-plus.png"
-        /></a>
+        <div>
+          <a href="https://linkedin.com/in/samuel-c-donovan"
+            ><img id="li-logo" src="../assets/LI-In-Bug.png"
+          /></a>
+        </div>
+        <div>
+          <a href="https://github.com/samcdonovan"
+            ><img src="../assets/GitHub-Mark-120px-plus.png"
+          /></a>
+        </div>
       </div>
     </div>
   </div>
@@ -36,8 +42,8 @@
 
     <div id="form-container">
       <p>
-        Want to write me an email? Fill in the form below and write me a
-        message, I should respond within 1 to 3 working days!
+        Want to write me an email? Fill in the form below and I should respond
+        within 1 to 3 working days!
       </p>
       <div id="name-fields">
         <div id="name-container">
@@ -104,22 +110,23 @@ export default {
 <style scoped>
 .contact-header {
   display: flex;
-  width: 80%;
-  height: 40vh;
+  width: 65%;
+  height: 25vh;
   border-style: solid;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
+  margin-top:2%;
 }
 
 #contact-me {
   width: 60%;
-  font-size: 7vh;
+  font-size: 8vh;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  height: 45%;
+  height: fit-content;
 }
 @media (max-width: 960px) {
   .contact-header {
@@ -144,30 +151,52 @@ export default {
     margin-right: auto;
   }
 }
+#info-paras {
+  width: 50%;
+  height: 80%;
+  float: left;
+  margin-left:4%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 #contact-info {
-  width: 40%;
+  width: 50%;
   border-left: solid;
   padding: 1%;
+}
+.info-p {
+  width: 100%;
 }
 #contact-info p {
   float: left;
 }
 #contact-info img {
-  width: 15%;
-  height: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: 55%;
   padding-left: 5%;
+  margin-top:5%;
 }
 .info-type {
   border-right: solid;
   padding-right: 1.5%;
 }
 #socials {
+  height: 100%;
+  width: 28%;
+  margin-right:5%;
   position: relative;
-  float: left;
+  float: right;
+}
+#socials div{
+  width:100%;
+  padding:1%;
+  margin-top:1%;
 }
 form {
   border-style: solid;
-  width: 60%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
   padding: 1%;
