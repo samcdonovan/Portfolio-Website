@@ -165,16 +165,20 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(60%, 1fr));
   }
 }
+h3{
+ color:#eae7dc;
+}
 .project {
   position: relative;
   border-style: solid;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(105, 164, 120, 0.367);
   height: 60vh;
   padding: 10px;
   transition: transform 0.2s;
   cursor: pointer;
   box-shadow: 10px 10px 5px gray;
   margin-bottom: 0%;
+  border-radius: 5px;
 }
 .project span {
   border-style: solid;

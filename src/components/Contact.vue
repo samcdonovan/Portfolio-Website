@@ -117,6 +117,7 @@ export default {
   margin-right: auto;
   margin-bottom: 5%;
   margin-top:2%;
+  border-radius:5px;
 }
 
 #contact-me {
@@ -128,35 +129,13 @@ export default {
   margin-right: auto;
   height: fit-content;
 }
-@media (max-width: 960px) {
-  .contact-header {
-    display: inline-block;
-    width: 90%;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-  }
 
-  #contact-info {
-    border-left: none;
-    min-width: 90%;
-    height: fit-content;
-  }
-
-  #contact-info p {
-    width: 100%;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 #info-paras {
-  width: 50%;
+  width: 70%;
   height: 80%;
   float: left;
-  margin-left:4%;
-  margin-top: auto;
+  margin-left:0%;
+  margin-top: 6%;
   margin-bottom: auto;
 }
 #contact-info {
@@ -184,7 +163,7 @@ export default {
 }
 #socials {
   height: 100%;
-  width: 28%;
+  width: 25%;
   margin-right:5%;
   position: relative;
   float: right;
@@ -192,7 +171,7 @@ export default {
 #socials div{
   width:100%;
   padding:1%;
-  margin-top:1%;
+  margin-top:10%;
 }
 form {
   border-style: solid;
@@ -201,6 +180,7 @@ form {
   margin-right: auto;
   padding: 1%;
   bottom: 5%;
+  border-radius:5px;
 }
 
 #form-container {
@@ -276,5 +256,28 @@ input[type="submit"]:hover {
   width: 97%;
   height: inherit;
   padding: 3%;
+}
+@media (max-width: 960px) {
+  .contact-header {
+    display: inline-block;
+    width: 90%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+  }
+
+  #contact-info {
+    border-left: none;
+    min-width: 90%;
+    height: fit-content;
+  }
+
+  #contact-info p {
+    width: 100%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

@@ -29,8 +29,8 @@
     </p>
 
     <p>
-      To see more details about the above projects (amongst other projects),
-      please visit the
+      To see more details about the projects mentioned above (as well as other
+      projects), please visit the
       <router-link id="projects-link" to="/projects">Projects page</router-link>
       of this website.
     </p>
@@ -52,7 +52,6 @@ export default {
     msg: String,
   },
 };
-
 </script>
 <style scoped>
 #projects-link:visited {
@@ -67,12 +66,11 @@ export default {
   padding-bottom: 2%;
 }
 
-.about-body{
-  padding:2%;
-  padding-top:0%;
+.about-body {
+  padding: 2%;
+  padding-top: 0%;
 }
-.about-body p{
+.about-body p {
   text-align: justify;
-
 }
 </style>

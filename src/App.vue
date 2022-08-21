@@ -82,10 +82,10 @@ body {
   justify-content: stretch;
   align-items: stretch;
   background-color: #88bdbc;
- 
+   padding-bottom: 10vh;
 }
 
-#app {
+#app{
   min-height: 100%;
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
@@ -94,7 +94,7 @@ body {
   height: 100%;
   width: inherit;
   position: relative;
-  padding-bottom: 10vh;
+
   justify-content: stretch;
   align-items: stretch;
 }
@@ -154,12 +154,6 @@ body {
   margin-right: auto;
 }
 
-.menu img {
-  width: 20vh;
-  height: 20vh;
-  border: none;
-}
-
 .menu-item {
   width: 15%;
   font-size: 1.25rem;
@@ -180,7 +174,7 @@ body {
 .menu-item.router-link-active,
 .menu-item.router-link-exact-active,
 .menu-item:active span {
-  color: rgb(111, 90, 230);
+  color: rosybrown;
 }
 
 .menu-item:hover {
