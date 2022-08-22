@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createMemoryHistory, createRouter } from 'vue-router'
 import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Contact from '../components/Contact.vue'
@@ -7,7 +7,7 @@ import Success from '../components/Success.vue'
 
 const routes = [
     {
-        path:"/",
+        path: "/",
         name: "HomePage",
         component: Home
     },
@@ -34,8 +34,10 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+    mode: 'abstract',
+    history: createMemoryHistory(),
+    //history: createWebHistory(process.env.BASE_URL),
+    routes
 })
 
 export default router
