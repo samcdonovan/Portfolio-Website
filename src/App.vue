@@ -157,7 +157,7 @@ body {
 
 .menu-item {
   width: 15%;
-  font-size: 3.5vh;
+  font-size: 4vh;
   padding-bottom: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
