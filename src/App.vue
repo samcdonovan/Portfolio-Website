@@ -95,7 +95,7 @@ body {
   width: inherit;
   position: relative;
   justify-content: stretch;
-  font-size: 125%;
+  font-size: 3vh;
   align-items: stretch;
 }
 
