@@ -172,10 +172,9 @@ body {
   padding: 1%;
 }
 .menu-item:hover span,
-.menu-item.router-link-active,
-.menu-item.router-link-exact-active,
-.menu-item:active span {
-  color: rosybrown;
+.menu-item span:active {
+  color: rgb(184, 72, 24);
+  font-weight:bold;
 }
 
 .menu-item:hover {

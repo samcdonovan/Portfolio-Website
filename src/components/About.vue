@@ -44,6 +44,44 @@
       </div>
       <img src="../assets/interests-pic.jpg" />
     </div>
+    <div id="experience">
+      <h2>Experience</h2>
+      <div id="experience-1">
+        <h3>Customer Assistant / Delivery Assistant</h3>
+        <p>Key responsibilities:</p>
+        <ul>
+          <li>Help lead a team of ~5 people responsible for stock delivery.</li>
+          <li>
+            Cooperated with other team members to provide helpful service to
+            customers and finish stock deliveries with speed and efficiency.
+          </li>
+          <li>Minimised number of errors in delivery down to 1%.</li>
+          <li>
+            Demonstrated flexibility when switching between delivery/stock and
+            customer assistance.
+          </li>
+          <li>Made quick decisions to minimise errors when problems arose.</li>
+        </ul>
+      </div>
+      <div id="experience-2">
+        <h3>Student Learning Assistant</h3>
+        <p>Key responsibilities:</p>
+        <ul>
+          <li>
+            Worked with 30+ students and engaged in co-facilitated learning to
+            help them better understand the content they are learning.
+          </li>
+          <li>Assisted lecturers with lesson plans and managing students.</li>
+          <li>
+            Created and ran weekly drop-in sessions for a set of 10+ students. I
+            created a session plan, a power point presentation and a quiz, and
+            delivered this within the allotted hour.
+          </li>
+          <li>Adapted to different teaching styles for different students.</li>
+          <li>Readily available to aid students through Slack when needed.</li>
+        </ul>
+      </div>
+    </div>
     <h2>Hobbies And Interests</h2>
     <p>
       I find great joy in being outside, I have a keen interest in cycling and
@@ -86,16 +124,38 @@ export default {
 #interests {
   float: left;
   width: 100%;
-  height:80%;
+  height: 80%;
 
-  position:relative;
+  position: relative;
 }
-#interests-body{
-  float:left;
-  width:55%;
+#interests-body {
+  float: left;
+  width: 55%;
 }
 #interests img {
   width: 30%;
+  height: 50%;
+}
+
+#experience{
   height:50%;
+  width:100%;
+  position:relative;
+  display:inline-block;
+}
+#experience-1,
+#experience-2 {
+  width: 49%;
+  height:100%;
+  text-align: left;
+}
+
+#experience-1 {
+  float: left;
+  border-right: dotted;
+}
+
+#experience-2 {
+  float: right;
 }
 </style>
