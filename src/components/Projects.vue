@@ -8,6 +8,13 @@
   </div>
   <div class="project-grid">
     <div class="project">
+      <!--<div class="proj-link">-->
+      <a
+        href="https://github.com/samcdonovan/Tweet-Scraper-With-Sentiment-Analysis"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>Twitter Sentiment Analysis</h3>
       <!--<img src="../assets/twitter-sentiment.png">-->
       <p>Languages: <span class="py">Python</span></p>
@@ -32,6 +39,13 @@
     </div>
 
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Data-Visualization-Website-NBA"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
+
       <h3>NBA Data Visualization Website</h3>
 
       <p>
@@ -58,6 +72,12 @@
       </div>
     </div>
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Machine-Learning-Categoriser-for-UCI-Digits"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>Machine Learning Categoriser for handwritten digits (UCI)</h3>
       <p>Languages: <span class="java">Java</span></p>
       <div class="description">
@@ -72,6 +92,12 @@
       </div>
     </div>
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Web-Scraping-Price-Comparison-Website"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>Book Price Comparison Website</h3>
       <p>
         Languages: <span class="java">Java</span>
@@ -98,6 +124,12 @@
       </div>
     </div>
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Held-Karp-TSP"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>Travelling Salesperson Problem</h3>
       <p>Languages: <span class="java">Java</span></p>
       <div class="description">
@@ -110,6 +142,12 @@
       </div>
     </div>
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Tweet-Scraper-With-Sentiment-Analysis"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>E-Commerce Website</h3>
       <p>
         Languages: <span class="js">JavaScript</span>
@@ -132,6 +170,12 @@
       </div>
     </div>
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Tweet-Scraper-With-Sentiment-Analysis"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>Tetris Game Website</h3>
       <p>
         Languages: <span class="js">JavaScript</span>
@@ -146,6 +190,12 @@
       </div>
     </div>
     <div class="project">
+      <a
+        href="https://github.com/samcdonovan/CPP-HashTable"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
       <h3>Hashtable Library System</h3>
       <p>Languages: <span class="cpp">C++</span></p>
 
@@ -211,6 +261,34 @@ h3 {
   box-shadow: 10px 10px 5px gray;
   margin-bottom: 0%;
   border-radius: 5px;
+  padding: 1%;
+}
+.proj-link {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(9, 9, 13, 0.6);
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  color: #eae7dc;
+}
+.proj-link span {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-decoration: none;
+  color: #eae7dc;
+  background-color: black;
+  top: 45%;
+  width: 50%;
+  height: 20%;
+  position: relative;
+}
+.project:hover .proj-link {
+  display: block;
 }
 .project span {
   border-style: solid;
