@@ -115,7 +115,7 @@ export default {
   border-style: solid;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   margin-top: 2%;
   border-radius: 5px;
 }
@@ -201,6 +201,8 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 2vh;
 }
 
 #message {
@@ -257,6 +259,23 @@ input[type="submit"]:hover {
   width: 97%;
   height: inherit;
   padding: 3%;
+}
+
+button {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 4vh;
+  width: 25%;
+  height: 45px;
+  background-color: #254e58;
+  color: #eae7dc;
+  transition: transform 0.2s;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px gray;
+}
+
+button:hover {
+  background-color: #35545c;
+  transform: scale(1.1);
 }
 @media (max-width: 960px) {
   .contact-header {
