@@ -4,7 +4,7 @@
       <h2>I'm Sam, and you've stumbled across my portfolio website!</h2>-->
 
   <div id="img-me">
-    <img src="../assets/bg-me-new.png" />
+    <img src="../assets/bg-me-new.png" ALT="Image of me saying 'Hey there! I'm Sam and you've stumbled across my portfolio website'"/>
   </div>
   <div id="home-info">
     <p>Aspiring Software Engineer looking for a role in one of these fields:

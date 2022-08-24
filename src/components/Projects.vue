@@ -119,7 +119,7 @@
         <p>
           Built a price comparison website for books from 5 different retailers.
           Used JSoup and Selenium web scraping, and a range of other Java
-          frameworks/libraries to manage the project. Also built a RESTful API,
+          frameworks/libraries to manage the project. Built a RESTful API,
           allowing the user to retrieve data from the database in JSON format.
         </p>
       </div>
@@ -263,6 +263,7 @@ h3 {
   margin-bottom: 0%;
   border-radius: 5px;
   padding: 1%;
+
 }
 .proj-link {
   display: none;
@@ -326,6 +327,9 @@ h3 {
   margin: 10px;
 }
 
+.description {
+  font-size:2.5vh;
+}
 .js {
   background-color: #d6b85a;
 }
