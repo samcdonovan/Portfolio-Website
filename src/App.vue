@@ -29,7 +29,7 @@
 
   <router-view />
 
-  <footer></footer>
+  <!--<footer></footer>-->
 </template>
 
 <script>
@@ -86,12 +86,12 @@ body {
 }
 
 #app {
-  min-height: 100%;
+  /*min-height: 100%;*/
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
+  height: inherit;
   width: inherit;
   position: relative;
   justify-content: stretch;
