@@ -113,13 +113,15 @@
         <span class="other">Selenium</span>
         <span class="other">JUnit</span>
         <span class="other">Threads</span>
+        <span class="other">RESTful API</span>
         <span class="db">MySQL</span>
       </div>
       <div class="description">
         <p>
           Built a price comparison website for books from 5 different retailers.
           Used JSoup and Selenium web scraping, and a range of other Java
-          frameworks/libraries to manage the project.
+          frameworks/libraries to manage the project. Also built a RESTful API,
+          allowing the user to retrieve data from the database in JSON format.
         </p>
       </div>
     </div>
