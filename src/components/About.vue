@@ -82,14 +82,14 @@
         </ul>
       </div>
     </div>
-    <h2>Hobbies And Interests</h2>
+   <!-- <h2>Hobbies And Interests</h2>
     <p>
       I find great joy in being outside, I have a keen interest in cycling and
       running. In my free time I love taking my dogs for a walk and grabbing
       coffee with friends. I am an avid reader, I recently completed Wretched of
       the Earth by Frantz Fanon, and I am currently reading “Songs of a dead
       dreamer” by Thomas Ligotti.
-    </p>
+    </p>-->
   </div>
 </template>
 

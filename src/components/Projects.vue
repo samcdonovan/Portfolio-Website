@@ -109,7 +109,6 @@
         <span class="other">Maven</span>
         <span class="other">Hibernate</span>
         <span class="other">Spring</span>
-        <span class="other">JSoup</span>
         <span class="other">Selenium</span>
         <span class="other">JUnit</span>
         <span class="other">Threads</span>
