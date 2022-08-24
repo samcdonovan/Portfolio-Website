@@ -156,7 +156,7 @@ body {
 }
 
 .menu-item {
-  width: 15%;
+  width: 20%;
   font-size: 4vh;
   padding-bottom: 0.5%;
   margin-top: auto;
