@@ -2,6 +2,21 @@
   <div id="nav-bar">
     <div id="site-title">
       <p>Samuel Donovan</p>
+      <div id="phone-menu">
+        <button v-on:click="openDropdown()" class="drop-button">Menu</button>
+        <div id="dropdown" class="dropdown-links">
+          <router-link class="phone-item" to="/"><span>HOME</span></router-link>
+          <router-link class="phone-item" to="/about"
+            ><span>ABOUT</span></router-link
+          >
+          <router-link class="phone-item" to="/projects"
+            ><span>PROJECTS</span></router-link
+          >
+          <router-link class="phone-item" to="/contact"
+            ><span>CONTACT</span></router-link
+          >
+        </div>
+      </div>
     </div>
     <div class="menu">
       <router-link class="menu-item" to="/"><span>HOME</span></router-link>
@@ -15,15 +30,6 @@
       <router-link class="menu-item" id="last" to="/contact"
         ><span>CONTACT</span></router-link
       >
-    </div>
-  </div>
-  <div class="phone-menu">
-    <button v-on:click="openDropdown()" class="drop-button">Menu</button>
-    <div id="dropdown" class="dropdown-links">
-      <router-link to="/">HOME</router-link>
-      <router-link to="/about">ABOUT</router-link>
-      <router-link to="/projects">PROJECTS</router-link>
-      <router-link to="/contact">CONTACT</router-link>
     </div>
   </div>
 
@@ -46,6 +52,7 @@ export default {
   methods: {
     openDropdown() {
       document.getElementById("dropdown").classList.toggle("show");
+      document.getElementById("phone-menu").style.backgroundColor = "#74a2a1";
     },
 
     onClick(event) {
@@ -95,7 +102,8 @@ body {
   width: inherit;
   position: relative;
   justify-content: stretch;
-  font-size: 3vh;
+  /*font-size: 3vh; */
+  font-size: 100%;
   align-items: stretch;
 }
 
@@ -122,16 +130,6 @@ body {
   border-bottom: 2px solid #254e58;
   padding-bottom: 0;
   margin-bottom: 0;
-  /*
-  background-image: linear-gradient(
-    to top,
-    #eee2dc,
-    #eedbd2,
-    #eed5c9,
-    #edcec0,
-    #edc7b7
-  );
-  */
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -174,7 +172,7 @@ body {
 .menu-item:hover span,
 .menu-item span:active {
   color: rgb(184, 72, 24);
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .menu-item:hover {
@@ -186,23 +184,27 @@ body {
   color: black;
 }
 
-.phone-menu {
+#phone-menu {
   display: none;
-  border-style: solid;
   float: left;
   left: 5%;
-  margin-top: 5%;
   position: relative;
   z-index: 1;
+  width: 15%;
+  padding: 0;
+  margin: 0;
+}
+
+#phone-menu button {
+  margin-top: auto;
+  margin-bottom:auto;
 }
 .dropdown-links {
-  border-style: solid;
   visibility: hidden;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  width: inherit;
 }
 .dropdown-links a {
   color: black;
@@ -210,16 +212,77 @@ body {
   text-decoration: none;
   display: block;
 }
+
+.drop-button:active ~ #dropdown {
+  visibility: hidden;
+  opacity: 0;
+}
+.drop-button:active #phone-menu {
+  background-color: #254e58;
+}
+.drop-button:not(:active) ~ #dropdown {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#dropdown {
+  padding-left: 0;
+  margin-top: 0;
+  text-align: center;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  position: absolute;
+  font-size: 3vw;
+}
+.phone-item {
+  border-radius: 2px;
+  width: 80%;
+  background-color: #254e58;
+
+  border-top: 1px solid #eae7dc;
+  transition: background 3s;
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.35);
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.phone-item span {
+  color: #eae7dc;
+}
+.phone-item:hover,
+.phone-item:focus {
+  background: #357180;
+  transition: background 0.45s;
+}
+/*
+.phone-item{
+  display: block;
+  color: inherit;
+  text-transform: lowercase;
+  font-weight: 200;
+  text-decoration: none;
+}
+*/
 .show {
   visibility: visible;
   display: visible;
-  color: blue;
 }
 @media (max-width: 960px) {
+  #site-title div {
+    float: left;
+  }
+
+  #site-title p {
+    width: 80%;
+    float: right;
+    margin-top: 2%;
+    font-size: 7.5vw;
+  }
   .menu {
     display: none;
   }
-  .phone-menu {
+
+  #phone-menu {
     display: inline-block;
   }
 }

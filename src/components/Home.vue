@@ -33,7 +33,7 @@ export default {
 }
 #home-info {
   position: absolute;
-  width: 40%;
+  width: 38%;
   height: fit-content;
   float: right;
   border-style: solid;
