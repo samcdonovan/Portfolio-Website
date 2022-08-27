@@ -2,19 +2,23 @@
   <div id="nav-bar">
     <div id="site-title">
       <p>Samuel Donovan</p>
-      <div id="phone-menu">
-        <button v-on:click="openDropdown()" class="drop-button">Menu</button>
-        <div id="dropdown" class="dropdown-links">
-          <router-link class="phone-item" to="/"><span>HOME</span></router-link>
-          <router-link class="phone-item" to="/about"
-            ><span>ABOUT</span></router-link
-          >
-          <router-link class="phone-item" to="/projects"
-            ><span>PROJECTS</span></router-link
-          >
-          <router-link class="phone-item" to="/contact"
-            ><span>CONTACT</span></router-link
-          >
+      <div id="menu-container">
+        <div id="phone-menu">
+          <button v-on:click="openDropdown()" class="drop-button">Menu</button>
+          <div id="dropdown" class="dropdown-links">
+            <router-link class="phone-item" to="/"
+              ><span>HOME</span></router-link
+            >
+            <router-link class="phone-item" to="/about"
+              ><span>ABOUT</span></router-link
+            >
+            <router-link class="phone-item" to="/projects"
+              ><span>PROJECTS</span></router-link
+            >
+            <router-link class="phone-item" to="/contact"
+              ><span>CONTACT</span></router-link
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -51,8 +55,20 @@ export default {
   },
   methods: {
     openDropdown() {
+      let phone_menu = document.getElementById("menu-container");
+      //document.getElementById("dropdown").style.position = "relative" : "absolute";
       document.getElementById("dropdown").classList.toggle("show");
-      document.getElementById("phone-menu").style.backgroundColor = "#74a2a1";
+      phone_menu.style.backgroundColor = document
+        .getElementById("dropdown")
+        .classList.contains("show")
+        ? "#74a2a1"
+        : "";
+
+      phone_menu.style.boxShadow = document
+        .getElementById("dropdown")
+        .classList.contains("show")
+        ? "0px 8px 16px 0px rgba(0, 0, 0, 0.2)"
+        : "";
     },
 
     onClick(event) {
@@ -67,6 +83,8 @@ export default {
             currentItem.classList.remove("show");
           }
         }
+        document.getElementById("menu-container").style.backgroundColor = "";
+        document.getElementById("menu-container").style.boxShadow = "";
       }
     },
   },
@@ -93,7 +111,6 @@ body {
 }
 
 #app {
-  /*min-height: 100%;*/
   font-family: "Lucida Console", "Courier New", monospace;
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
@@ -175,29 +192,36 @@ body {
   font-weight: bold;
 }
 
-.menu-item:hover {
-  color: blue;
-  cursor: pointer;
-}
-
 .menu-item:visited {
   color: black;
 }
 
 #phone-menu {
   display: none;
-  float: left;
-  left: 5%;
+}
+.drop-button {
   position: relative;
-  z-index: 1;
-  width: 15%;
-  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  margin-top: 10%;
+  bottom: 0%;
   margin: 0;
+}
+#menu-container {
+  display:none;
+  position: absolute;
+  left:0;
+  width: 20%;
+  height: 300%;
+  padding: 2%;
+  margin: 0;
+  z-index: 1;
 }
 
 #phone-menu button {
   margin-top: auto;
-  margin-bottom:auto;
+  margin-bottom: auto;
 }
 .dropdown-links {
   visibility: hidden;
@@ -234,11 +258,11 @@ body {
   position: absolute;
   font-size: 3vw;
 }
+
 .phone-item {
   border-radius: 2px;
-  width: 80%;
+  width: 70%;
   background-color: #254e58;
-
   border-top: 1px solid #eae7dc;
   transition: background 3s;
   box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.35);
@@ -247,22 +271,21 @@ body {
   margin-right: auto;
 }
 .phone-item span {
+  position: relative;
+  height: fit-content;
+  display: block;
   color: #eae7dc;
+  width: fit-content;
+  border-style: solid;
+  margin-right: auto;
+  margin-left: auto;
 }
 .phone-item:hover,
 .phone-item:focus {
   background: #357180;
   transition: background 0.45s;
 }
-/*
-.phone-item{
-  display: block;
-  color: inherit;
-  text-transform: lowercase;
-  font-weight: 200;
-  text-decoration: none;
-}
-*/
+
 .show {
   visibility: visible;
   display: visible;
@@ -281,9 +304,17 @@ body {
   .menu {
     display: none;
   }
-
+  #menu-container {
+    display: inline-block;
+  }
   #phone-menu {
     display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
   }
 }
 </style>
