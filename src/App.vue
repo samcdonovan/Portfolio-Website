@@ -96,6 +96,7 @@ html {
   max-width: 1980px;
   margin: 0 auto;
   height: 100%;
+  min-height: 100% !important;
 }
 body {
   text-align: center;
@@ -108,6 +109,8 @@ body {
   align-items: stretch;
   background-color: #8dbdbc;
   padding-bottom: 10vh;
+  min-height: 100% !important;
+  height: 100%;
 }
 
 #app {
@@ -115,7 +118,8 @@ body {
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: inherit;
+  height: 1vh;
+  min-height: 100%;
   width: inherit;
   position: relative;
   justify-content: stretch;
@@ -209,9 +213,9 @@ body {
   margin: 0;
 }
 #menu-container {
-  display:none;
+  display: none;
   position: absolute;
-  left:0;
+  left: 0;
   width: 20%;
   height: 300%;
   padding: 2%;

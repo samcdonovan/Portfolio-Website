@@ -5,7 +5,6 @@
 
   <div id="img-me">
     <img src="../assets/bg-me-new.png" ALT="Image of me saying 'Hey there! I'm Sam and you've stumbled across my portfolio website'"/>
-  </div>
   <div id="home-info">
     <p>Aspiring Software Engineer looking for a role in one of these fields:
       
@@ -16,6 +15,17 @@
       </ul>
       </p>
   </div>
+  </div>
+ <!-- <div id="home-info">
+    <p>Aspiring Software Engineer looking for a role in one of these fields:
+      
+      <ul>
+      <li>Backend Developer</li>
+      <li>Full Stack Developer</li>
+      <li>Artificial Intelligence</li>
+      </ul>
+      </p>
+  </div> -->
 
   <!--  <div id="bottom"></div>-->
 </template>
@@ -40,9 +50,10 @@ export default {
   border-radius: 5px;
   text-align: left;
   padding: 1%;
-  top: 400%;
   right: 5%;
+  bottom:15%;
 }
+
 /*
 #intro {
   position: relative;
@@ -61,12 +72,11 @@ export default {
   margin-bottom: -10%;
 }
 #img-me img {
-  width: 90%;
-  height: 90%;
+  width: 70%;
+  height: 70%;
 }
 @media (max-width: 960px) {
   #home-info {
-    display:none;
     position: absolute;
     width: 50%;
     height: fit-content;
@@ -75,11 +85,13 @@ export default {
     border-radius: 5px;
     text-align: left;
     padding: 1%;
-    bottom:-10%;
+
     right: 5%;
   }
 
- 
+  * {
+    border-style: solid;
+  }
 }
 /*
 #bottom {
