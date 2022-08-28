@@ -65,7 +65,7 @@ export default {
 */
 
 #img-me {
-  position: absolute;
+  position: relative;
   width: 100%;
   float: left;
   margin-left: auto;
@@ -73,24 +73,27 @@ export default {
   margin-bottom: -10%;
 }
 #img-me img {
+  position: relative;
   width: 70%;
   height: 70%;
 }
 @media (max-width: 960px) {
   #home-info {
-    position: absolute;
-    width: 50%;
-    height: fit-content;
+    position: relative;
+    width: 80%;
     float: right;
     border-style: solid;
     border-radius: 5px;
     text-align: left;
     padding: 1%;
-    right: 5%;
+    bottom: -10%;
   }
   #img-me img {
     height: 95%;
     width: 95%;
+  }
+  #img-me {
+    padding-bottom: 5%;
   }
 }
 

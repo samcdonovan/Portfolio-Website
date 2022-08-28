@@ -82,7 +82,7 @@
         </ul>
       </div>
     </div>
-   <!-- <h2>Hobbies And Interests</h2>
+    <!-- <h2>Hobbies And Interests</h2>
     <p>
       I find great joy in being outside, I have a keen interest in cycling and
       running. In my free time I love taking my dogs for a walk and grabbing
@@ -137,16 +137,16 @@ export default {
   height: 50%;
 }
 
-#experience{
-  height:50%;
-  width:100%;
-  position:relative;
-  display:inline-block;
+#experience {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
 }
 #experience-1,
 #experience-2 {
   width: 49%;
-  height:100%;
+  height: 100%;
   text-align: left;
 }
 
@@ -157,5 +157,13 @@ export default {
 
 #experience-2 {
   float: right;
+}
+@media (max-width: 960px) {
+  #interests-body{
+    width:100%;
+  }
+  #interests-body, #interests img{
+    position:relative;
+  }
 }
 </style>
