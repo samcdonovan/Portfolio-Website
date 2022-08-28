@@ -51,7 +51,7 @@ export default {
   text-align: left;
   padding: 1%;
   right: 5%;
-  bottom:15%;
+  bottom: 15%;
 }
 
 /*
@@ -85,14 +85,10 @@ export default {
     border-radius: 5px;
     text-align: left;
     padding: 1%;
-
     right: 5%;
   }
-
-  * {
-    border-style: solid;
-  }
 }
+
 /*
 #bottom {
   position: relative;

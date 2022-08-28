@@ -95,22 +95,28 @@ export default {
 html {
   max-width: 1980px;
   margin: 0 auto;
-  height: 100%;
-  min-height: 100% !important;
+  margin-bottom: 0;
+  padding: 0;
+  /*height: calc(var(--vh, 1vh) * 100);
+  */
+  min-height: 100vh;
 }
 body {
-  text-align: center;
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 1980px;
+  height: 100%;
   display: flex;
   justify-content: stretch;
   align-items: stretch;
+  text-align: center;
   background-color: #8dbdbc;
   padding-bottom: 10vh;
-  min-height: 100% !important;
-  height: 100%;
+
+  /*
+  height: calc(var(--vh, 1vh) * 100);
+  */
 }
 
 #app {
@@ -118,14 +124,18 @@ body {
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 1vh;
-  min-height: 100%;
-  width: inherit;
-  position: relative;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
   justify-content: stretch;
   /*font-size: 3vh; */
   font-size: 100%;
   align-items: stretch;
+  margin-bottom: 0;
 }
 
 .header {
@@ -217,7 +227,7 @@ body {
   position: absolute;
   left: 0;
   width: 20%;
-  height: 300%;
+  height: 50%;
   padding: 2%;
   margin: 0;
   z-index: 1;
@@ -298,7 +308,20 @@ body {
   #site-title div {
     float: left;
   }
-
+  /*
+  html {
+    border-style: dashed;
+  }
+  #app {
+    border-style: groove;
+  }
+  *{
+    border-style:solid;
+  }
+  /*
+  body {
+    border-style: dotted;
+  }*/
   #site-title p {
     width: 80%;
     float: right;
