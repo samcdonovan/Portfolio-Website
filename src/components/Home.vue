@@ -5,6 +5,8 @@
 
   <div id="img-me">
     <img src="../assets/bg-me-new.png" ALT="Image of me saying 'Hey there! I'm Sam and you've stumbled across my portfolio website'"/>
+
+  </div>
   <div id="home-info">
     <p>Aspiring Software Engineer looking for a role in one of these fields:
       
@@ -14,7 +16,6 @@
       <li>Artificial Intelligence</li>
       </ul>
       </p>
-  </div>
   </div>
  <!-- <div id="home-info">
     <p>Aspiring Software Engineer looking for a role in one of these fields:
@@ -51,7 +52,7 @@ export default {
   text-align: left;
   padding: 1%;
   right: 5%;
-  bottom: 15%;
+  bottom: -15%;
 }
 
 /*
@@ -86,6 +87,10 @@ export default {
     text-align: left;
     padding: 1%;
     right: 5%;
+  }
+  #img-me img {
+    height: 95%;
+    width: 95%;
   }
 }
 

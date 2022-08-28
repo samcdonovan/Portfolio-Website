@@ -133,7 +133,7 @@ body {
 
   justify-content: stretch;
   /*font-size: 3vh; */
-  font-size: 100%;
+  font-size: 110%;
   align-items: stretch;
   margin-bottom: 0;
 }
