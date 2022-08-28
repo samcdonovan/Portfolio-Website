@@ -278,6 +278,9 @@ button:hover {
   transform: scale(1.1);
 }
 @media (max-width: 960px) {
+  form {
+    width: 80%;
+  }
   .contact-header {
     display: inline-block;
     width: 90%;

@@ -165,5 +165,9 @@ export default {
   #interests-body, #interests img{
     position:relative;
   }
+  #interests img {
+     width:60%;
+     height: 100%;
+  }
 }
 </style>
