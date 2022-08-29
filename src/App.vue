@@ -184,10 +184,7 @@ body {
   text-align: center;
   background-color: #8dbdbc;
   padding-bottom: 10vh;
-
-  /*
-  height: calc(var(--vh, 1vh) * 100);
-  */
+  margin-bottom: 10vh;
 }
 
 #app {
@@ -383,7 +380,7 @@ body {
 
 .nav {
   position: absolute;
-  transition: 0.3s ease;
+  transition: 0.1s ease;
   visibility: hidden;
   width: 100%;
   height: fit-content;
@@ -395,6 +392,7 @@ body {
 }
 
 .nav li {
+  padding-bottom: 40%;
   list-style: none;
 }
 
@@ -420,7 +418,7 @@ body {
   width: 0;
   height: 0;
   background: radial-gradient(circle, #dc052d, #dc052d);
-  border-radius: 100%;
+  border-radius: 20%;
   transition: 0.3s ease;
   pointer-events: none;
 }
@@ -447,7 +445,7 @@ body {
 
 .change-bg {
   width: 280px;
-  height: 300px;
+  height: 250px;
   transform: translate(-60%, -30%);
 }
 
@@ -518,7 +516,7 @@ body {
 .phone-item:hover,
 .phone-item:focus {
   background: #357180;
-  transition: background 0.3s;
+  transition: background 0.25s;
 }
 
 .show {

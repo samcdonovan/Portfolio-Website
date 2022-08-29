@@ -44,6 +44,7 @@
       </div>
       <img src="../assets/interests-pic.jpg" />
     </div>
+    <div class="connect-container"><div class="connector"></div></div>
     <div id="experience">
       <h2>Experience</h2>
       <div id="experience-1">
@@ -117,16 +118,21 @@ export default {
 .about-body {
   padding: 2%;
   padding-top: 0%;
+  display:inline-block;
+  position: relative;
 }
 .about-body p {
   text-align: justify;
 }
 #interests {
-  float: left;
-  width: 100%;
+  width: 90%;
   height: 80%;
-
+  border-style:solid;
+  padding:1%;
+  border-radius:5px;
   position: relative;
+  margin-left:auto;
+  margin-right:auto;
 }
 #interests-body {
   float: left;
@@ -136,11 +142,26 @@ export default {
   width: 30%;
   height: 50%;
 }
+.connect-container{
+  height:100%;
+  width:1px;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  border-style:solid;
+  padding-top:6%;
+  margin-top:2px;
+  margin-bottom:2px;
+}
+
 
 #experience {
   height: 50%;
-  width: 100%;
+  width: 80%;
   position: relative;
+  border-style:solid;
+  border-radius:5px;
+  padding:1%;
   display: inline-block;
 }
 #experience-1,
