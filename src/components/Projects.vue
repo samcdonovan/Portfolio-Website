@@ -263,7 +263,7 @@ h3 {
   margin-bottom: 0%;
   border-radius: 5px;
   padding: 1%;
-
+  overflow: auto;
 }
 .proj-link {
   display: none;
