@@ -193,7 +193,12 @@ export default {
     height: 100%;
   }
   #experience {
-    width:90%;
+    width: 90%;
+  }
+  #experience-1 ul,
+  #experience-2 ul {
+    list-style-position: inside;
+    padding-left: 0;
   }
 }
 </style>
