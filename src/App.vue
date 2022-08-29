@@ -233,7 +233,7 @@ body {
 }
 #site-title {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 9vh;
+  font-size: 300%;
   height: 10vh;
 }
 #site-title p {

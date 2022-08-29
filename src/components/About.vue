@@ -118,7 +118,7 @@ export default {
 .about-body {
   padding: 2%;
   padding-top: 0%;
-  display:inline-block;
+  display: inline-block;
   position: relative;
 }
 .about-body p {
@@ -127,12 +127,12 @@ export default {
 #interests {
   width: 90%;
   height: 80%;
-  border-style:solid;
-  padding:1%;
-  border-radius:5px;
+  border-style: solid;
+  padding: 1%;
+  border-radius: 5px;
   position: relative;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 #interests-body {
   float: left;
@@ -142,26 +142,27 @@ export default {
   width: 30%;
   height: 50%;
 }
-.connect-container{
-  height:100%;
-  width:1px;
-  position:relative;
-  margin-left:auto;
-  margin-right:auto;
-  border-style:solid;
-  padding-top:6%;
-  margin-top:2px;
-  margin-bottom:2px;
+.connect-container {
+  height: 100%;
+  background-image: linear-gradient(#000, #000);
+  background-size: 2px 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
-
 
 #experience {
   height: 50%;
   width: 80%;
   position: relative;
-  border-style:solid;
-  border-radius:5px;
-  padding:1%;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 1%;
   display: inline-block;
 }
 #experience-1,
@@ -180,15 +181,19 @@ export default {
   float: right;
 }
 @media (max-width: 960px) {
-  #interests-body{
-    width:100%;
+  #interests-body {
+    width: 100%;
   }
-  #interests-body, #interests img{
-    position:relative;
+  #interests-body,
+  #interests img {
+    position: relative;
   }
   #interests img {
-     width:60%;
-     height: 100%;
+    width: 60%;
+    height: 100%;
+  }
+  #experience {
+    width:90%;
   }
 }
 </style>
