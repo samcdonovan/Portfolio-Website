@@ -51,11 +51,10 @@
     </div>
     <div id="phone-menu">
       <!--<div class="button-container">-->
-        <div v-on:click="menuOnClick()" id="menu-bar">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
-       
+      <div v-on:click="menuOnClick()" id="menu-bar">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
       </div>
       <nav class="nav" id="nav">
         <ul class="nav-list">
@@ -224,10 +223,10 @@ body {
   margin-bottom: auto;
   width: fit-content;
   font-size: 7vh;
+  text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
 }
 
 #nav-bar {
-
   padding-top: 1%;
   border-bottom: 2px solid #254e58;
   padding-bottom: 0;
@@ -241,6 +240,7 @@ body {
   height: 10vh;
 }
 #site-title p {
+  text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
   margin: 0;
 }
 #site-title p,
@@ -369,8 +369,8 @@ body {
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
-  z-index:-1;
-  position:relative;
+  z-index: -1;
+  position: relative;
 }
 
 #bar1 {
@@ -530,8 +530,8 @@ body {
     float: right;
     width: 100%;
   }
-  #nav-bar{
-    height:10%;
+  #nav-bar {
+    height: 10%;
   }
   #site-title p {
     position: relative;

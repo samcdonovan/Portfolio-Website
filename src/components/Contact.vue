@@ -118,6 +118,7 @@ export default {
   margin-bottom: 3%;
   margin-top: 2%;
   border-radius: 5px;
+
 }
 
 #contact-me {
@@ -129,6 +130,7 @@ export default {
   margin-right: auto;
   height: fit-content;
   color: #eae7dc;
+  text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
 }
 
 #info-paras {
