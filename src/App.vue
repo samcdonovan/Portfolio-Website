@@ -169,7 +169,7 @@ body {
   justify-content: stretch;
   align-items: stretch;
   text-align: center;
-  background-color: #f5f0e3;
+  background-color: #f0ede4;
   padding-bottom: 10vh;
   margin-bottom: 10vh;
   color:#392b1e;
