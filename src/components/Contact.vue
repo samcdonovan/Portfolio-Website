@@ -184,6 +184,7 @@ form {
   padding: 1%;
   bottom: 5%;
   border-radius: 5px;
+  margin-bottom:10vh;
 }
 
 #form-container {

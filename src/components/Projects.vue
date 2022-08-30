@@ -242,6 +242,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: 100%;
+  margin-bottom:10vh;
 }
 @media (max-width: 960px) {
   .project-grid {
