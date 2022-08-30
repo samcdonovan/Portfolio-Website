@@ -304,7 +304,7 @@ h3 {
 .project {
   position: relative;
   border-style: solid;
-  background-color: rgba(105, 105, 164, 0.367);
+  background-color: rgba(121, 159, 215, 0.543);
   height: 60vh;
   padding: 10px;
   transition: transform 0.2s;

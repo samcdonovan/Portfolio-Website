@@ -1,5 +1,4 @@
 <template>
-
   <div id="nav-bar">
     <div id="site-title">
       <p>Samuel Donovan</p>
@@ -172,7 +171,7 @@ body {
   background-color: #f0ede4;
   padding-bottom: 10vh;
   margin-bottom: 10vh;
-  color:#392b1e;
+  color: #392b1e;
 }
 
 #app {
@@ -213,12 +212,12 @@ body {
 #nav-bar {
   padding-top: 1%;
   border-bottom: 5px solid #254e58;
-  border-radius:40%;
+  border-radius: 40%;
   padding-bottom: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
- /* background-color: #b56357;
+  background-attachment: fixed;
+  /* background-color: #b56357;
  */
 
   /*background-color: #8dbdbc;
@@ -261,23 +260,23 @@ body {
   padding: 1%;
 }
 .menu-item:hover span {
-  color: #F92C85;
+  color: #f13f89;
   transition: 0.15s;
-  border-bottom:solid;
+  border-bottom: solid;
   font-weight: bold;
 }
 
 .menu-item:visited {
   color: black;
 }
-.router-link-exact-active span{
-  color:  #F92C85;
-  border-bottom:solid;
-  font-weight:bold;
+.router-link-exact-active span {
+  color: #f13f89;
+  border-bottom: solid;
+  font-weight: bold;
 }
 #phone-menu {
   display: none;
-  z-index:2;
+  z-index: 2;
 }
 
 #menu-bar {
@@ -394,11 +393,11 @@ body {
 }
 @media (max-width: 960px) {
   #app {
-    font-size:100%;
+    font-size: 100%;
   }
   #site-title {
-    position:relative;
-    height:9vh; 
+    position: relative;
+    height: 9vh;
     width: 100%;
   }
   #nav-bar {
