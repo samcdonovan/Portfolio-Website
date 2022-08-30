@@ -144,7 +144,7 @@
     </div>
     <div class="project">
       <a
-        href="https://github.com/samcdonovan/Tweet-Scraper-With-Sentiment-Analysis"
+        href="https://github.com/samcdonovan/E-Commerce-Website"
         class="proj-link"
         target="_blank"
         ><span>GitHub repo</span></a
@@ -172,7 +172,7 @@
     </div>
     <div class="project">
       <a
-        href="https://github.com/samcdonovan/Tweet-Scraper-With-Sentiment-Analysis"
+        href="https://github.com/samcdonovan/Tetris-Website"
         class="proj-link"
         target="_blank"
         ><span>GitHub repo</span></a
