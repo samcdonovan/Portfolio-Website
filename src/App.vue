@@ -250,25 +250,26 @@ body {
   color: black;
 }
 .menu-item span {
-  border-bottom: solid;
   padding: 1%;
 }
-.menu-item:hover span,
-.menu-item span:active {
-  color: rgb(184, 72, 24);
+.menu-item:hover span {
+  color: rgb(239, 235, 125);
+  transition: 0.15s;
+  border-bottom:solid;
   font-weight: bold;
 }
 
 .menu-item:visited {
   color: black;
 }
-
+.router-link-exact-active span{
+  color:  rgb(239, 234, 73);
+  border-bottom:solid;
+  font-weight:bold;
+}
 #phone-menu {
   display: none;
-}
-
-#phone-menu {
-  z-index: 2;
+  z-index:2;
 }
 
 #menu-bar {
