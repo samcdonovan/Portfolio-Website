@@ -192,6 +192,33 @@
     </div>
     <div class="project">
       <a
+        href="https://github.com/samcdonovan/Running-App-Single-Page-WebApp"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
+      <h3>Mock Running App (Single Page WebApp)</h3>
+      <p>
+        Languages: <span class="js">JavaScript</span>
+      </p>
+      Technologies/Frameworks:
+      <div class="technologies">
+        <span class="other">Promises</span>
+        <span class="other">Node</span>
+        <span class="db">MySQL</span>
+      </div>
+      <div class="description">
+        <p>
+          Created a local website that acts as a running app. This is inspired
+          by Strava, so allows users to record and post exercises, view a
+          timeline of their friends' exercises, and comment and like those
+          posts. As a pseudo social media site, it also allows users to create
+          profiles and upload profile pictures.
+        </p>
+      </div>
+    </div>
+    <div class="project">
+      <a
         href="https://github.com/samcdonovan/CPP-HashTable"
         class="proj-link"
         target="_blank"
@@ -242,7 +269,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-  margin-bottom:10vh;
+  margin-bottom: 10vh;
 }
 @media (max-width: 960px) {
   .project-grid {
@@ -329,7 +356,7 @@ h3 {
 }
 
 .description {
-  font-size:2.5vh;
+  font-size: 2.5vh;
 }
 .js {
   background-color: #d6b85a;
