@@ -1,4 +1,5 @@
 <template>
+
   <div id="nav-bar">
     <div id="site-title">
       <p>Samuel Donovan</p>
@@ -168,9 +169,10 @@ body {
   justify-content: stretch;
   align-items: stretch;
   text-align: center;
-  background-color: #8dbdbc;
+  background-color: #f5f0e3;
   padding-bottom: 10vh;
   margin-bottom: 10vh;
+  color:#392b1e;
 }
 
 #app {
@@ -210,11 +212,17 @@ body {
 
 #nav-bar {
   padding-top: 1%;
-  border-bottom: 2px solid #254e58;
+  border-bottom: 5px solid #254e58;
+  border-radius:40%;
   padding-bottom: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;  
+ /* background-color: #b56357;
+ */
+
+  /*background-color: #8dbdbc;
+  */
 }
 #site-title {
   font-family: "Lucida Console", "Courier New", monospace;
@@ -227,7 +235,7 @@ body {
 }
 #site-title p,
 .title {
-  color: #eae7dc;
+  color: #8dbdbc;
 }
 .menu {
   width: 65%;
@@ -253,7 +261,7 @@ body {
   padding: 1%;
 }
 .menu-item:hover span {
-  color: rgb(239, 235, 125);
+  color: #F92C85;
   transition: 0.15s;
   border-bottom:solid;
   font-weight: bold;
@@ -263,7 +271,7 @@ body {
   color: black;
 }
 .router-link-exact-active span{
-  color:  rgb(239, 234, 73);
+  color:  #F92C85;
   border-bottom:solid;
   font-weight:bold;
 }

@@ -118,7 +118,6 @@ export default {
   margin-bottom: 3%;
   margin-top: 2%;
   border-radius: 5px;
-
 }
 
 #contact-me {
@@ -129,7 +128,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
-  color: #eae7dc;
+  color: #8dbdbc;
   text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
 }
 
@@ -184,7 +183,7 @@ form {
   padding: 1%;
   bottom: 5%;
   border-radius: 5px;
-  margin-bottom:10vh;
+  margin-bottom: 10vh;
 }
 
 #form-container {

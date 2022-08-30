@@ -198,9 +198,7 @@
         ><span>GitHub repo</span></a
       >
       <h3>Mock Running App (Single Page WebApp)</h3>
-      <p>
-        Languages: <span class="js">JavaScript</span>
-      </p>
+      <p>Languages: <span class="js">JavaScript</span></p>
       Technologies/Frameworks:
       <div class="technologies">
         <span class="other">Promises</span>
@@ -238,6 +236,30 @@
           simple "library system", where it can store, retrieve and delete books
           from the system and can realistically provide O(1) time complexity and
           good space complexity if the number of books is of a reasonable size.
+        </p>
+      </div>
+    </div>
+    <div class="project">
+      <a
+        href="https://github.com/samcdonovan/Mock-Voice-User-interface"
+        class="proj-link"
+        target="_blank"
+        ><span>GitHub repo</span></a
+      >
+      <h3>Mock Voice User Interface</h3>
+      <p>Languages: <span class="js">JavaScript</span></p>
+
+      Technologies/Frameworks:
+      <div class="technologies">
+        <span class="other">WebKitSpeech</span>
+      </div>
+      <div class="description">
+        <p>
+          Created a mock IDE which could be controlled by a voice user interface
+          (VUI). This project was more about the exploration of how VUI's could
+          be used in an educational setting, and was less about the
+          implementation, but was highly interesting and very fun to create. The
+          VUI is named "CLIDE".
         </p>
       </div>
     </div>

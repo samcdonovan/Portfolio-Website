@@ -124,6 +124,10 @@ export default {
 .about-body p {
   text-align: justify;
 }
+h2 {
+  color: #8dbdbc;
+  text-shadow: 1px 1px 1px #254e58, 2px 2px 1px #254e58;
+}
 #interests {
   width: 90%;
   height: 80%;
