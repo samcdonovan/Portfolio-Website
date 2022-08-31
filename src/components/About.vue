@@ -137,6 +137,7 @@ h2 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+/*  background-color: rgba(110, 156, 202, 0.544);*/
 }
 #interests-body {
   float: left;

@@ -308,7 +308,7 @@ h3 {
   position: relative;
   border-style: solid;
   background-color: #8dbdbc;
-  background-color: rgba(121, 159, 215, 0.5443);
+  background-color: rgba(110, 156, 202, 0.544);
   height: 60vh;
   padding: 10px;
   transition: transform 0.2s;

@@ -396,7 +396,7 @@ body {
 }
 #site-title p,
 .title {
-  color: #8dbdbc;
+  color: #8dbbbd;
   text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
   font-family: "Lucida Console", "Courier New", monospace;
 }
