@@ -168,14 +168,179 @@ body {
   justify-content: stretch;
   align-items: stretch;
   text-align: center;
-  background-color: #f0ede4;
+  /*background-color: #051622;
+  */
+  background-image: radial-gradient(
+    circle,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #a59ee1,
+    #afa3e1,
+    #b8a8e1,
+    #d3aad8,
+    #e5afce,
+    #efb6c5,
+    #f3c0c0
+  );
+  background-image: radial-gradient(
+    circle,
+    #747d95,
+    #626e87,
+    #505f7a,
+    #3d516c,
+    #2a435f,
+    #1f3b55,
+    #14334c,
+    #082b42,
+    #082639,
+    #072031,
+    #071b29,
+    #051621
+  );
+  background-image: radial-gradient(
+    circle,
+    #b6cec5,
+    #c0cdbf,
+    #cbccbd,
+    #d3cbbf,
+    #d8cbc4,
+    #decdc5,
+    #e3cec6,
+    #e9d0c7,
+    #efd4c1,
+    #efdbbb,
+    #e9e3b8,
+    #ddecba
+  );
+  background-image: radial-gradient(
+    circle,
+    #b6cec5,
+    #aed5c4,
+    #a8dbc1,
+    #a3e1bc,
+    #a0e7b6,
+    #aee6ab,
+    #bde4a2,
+    #cbe19a,
+    #e0d79a,
+    #edcfa2,
+    #f0c9ad,
+    #ecc6ba
+  );
+  background-image: radial-gradient(
+    circle,
+    #eaecff,
+    #e4f0fe,
+    #e2f3fa,
+    #e5f4f6,
+    #ebf5f3,
+    #e9f3ee,
+    #e9f0e8,
+    #eaede2,
+    #e8e5d5,
+    #e8dbc8,
+    #ead1bf,
+    #ecc6ba
+  );
+  background-image: radial-gradient(
+    circle,
+    #eaecff,
+    #ebeefd,
+    #eceffc,
+    #eef1fa,
+    #f0f2f8,
+    #dee0e7,
+    #cccfd6,
+    #babec6,
+    #9198a3,
+    #6a7382,
+    #445062,
+    #1f3044
+  );
+  background-image: radial-gradient(
+    circle,
+    #2c3f57,
+    #293c53,
+    #26384e,
+    #24354a,
+    #213246,
+    #1f2f43,
+    #1d2d3f,
+    #1b2a3c,
+    #192738,
+    #182534,
+    #162231,
+    #15202d
+  );
+  background-image: radial-gradient(
+    circle,
+    #1c2838,
+    #1a2534,
+    #17222f,
+    #151f2b,
+    #131c27,
+    #121a24,
+    #101822,
+    #0f161f,
+    #0e141d,
+    #0d131a,
+    #0c1118,
+    #0a0f16
+  );
+  background-image: radial-gradient(
+    circle,
+    #d6e2f2,
+    #d5e2f2,
+    #d4e1f2,
+    #d3e1f2,
+    #d2e0f2,
+    #cfdef1,
+    #ccdcf1,
+    #c9daf0,
+    #c3d6ef,
+    #bdd2ee,
+    #b7cdec,
+    #b1c9eb
+  );
+  background-image: radial-gradient(
+    circle,
+    #f5f5f5,
+    #f5f4f5,
+    #f7f3f4,
+    #f8f2f1,
+    #f8f2ee,
+    #f7f1eb,
+    #f5f1e8,
+    #f1f1e6,
+    #f0efe2,
+    #efeedf,
+    #efecdb,
+    #eeead7
+  );
+  /*
+  background-image: linear-gradient(
+    to right top,
+    #051622,
+    #0b1c28,
+    #11222f,
+    #162935,
+    #1c2f3c
+  );
+  */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-bottom: 10vh;
   margin-bottom: 10vh;
   color: #392b1e;
 }
-
 #app {
+  font-family: Arial, Helvetica, sans-serif;
+  /*
   font-family: "Lucida Console", "Courier New", monospace;
+  */
   /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -189,7 +354,6 @@ body {
   align-items: stretch;
   margin-bottom: 10vh;
 }
-
 .header {
   width: 80%;
   height: fit-content;
@@ -198,7 +362,6 @@ body {
   margin-bottom: 3%;
   margin-top: 2%;
 }
-
 .title {
   margin-left: auto;
   margin-right: auto;
@@ -206,35 +369,35 @@ body {
   margin-bottom: auto;
   width: fit-content;
   font-size: 7vh;
-  text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
-}
 
+}
 #nav-bar {
   padding-top: 1%;
   border-bottom: 5px solid #254e58;
-  border-radius: 40%;
+  border-radius: 0 0 40% 40%;
   padding-bottom: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* background-color: #b56357;
  */
-
   /*background-color: #8dbdbc;
   */
+  background-color: #eee2e3;
 }
 #site-title {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: calc(5vh + 5vw);
+  font-size: calc(2.3vh + 2.3vw);
   height: 10vh + 10vw;
 }
 #site-title p {
-  text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
   margin: 0;
 }
 #site-title p,
 .title {
   color: #8dbdbc;
+  text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
+   font-family: "Lucida Console", "Courier New", monospace; font-family: "Lucida Console", "Courier New", monospace;
 }
 .menu {
   width: 65%;
@@ -243,10 +406,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .menu-item {
   width: 20%;
-  font-size: 4vh;
+  font-size: 3vh;
   padding-bottom: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
@@ -265,7 +427,6 @@ body {
   border-bottom: solid;
   font-weight: bold;
 }
-
 .menu-item:visited {
   color: black;
 }

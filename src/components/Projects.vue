@@ -299,12 +299,15 @@ export default {
   }
 }
 h3 {
-  color: #eae7dc;
+  color: #f13f89;
+  text-shadow: 1px 1px 1px #caa7b6, 1px 1px 1px #ebdce2;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .project {
   position: relative;
   border-style: solid;
-  background-color: rgba(121, 159, 215, 0.543);
+  background-color: #8dbdbc;
+  background-color: rgba(121, 159, 215, 0.5443);
   height: 60vh;
   padding: 10px;
   transition: transform 0.2s;

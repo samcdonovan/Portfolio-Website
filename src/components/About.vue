@@ -125,7 +125,7 @@ export default {
   text-align: justify;
 }
 h2 {
-  color: #8dbdbc;
+  color:  #8dbdbc;
   text-shadow: 1px 1px 1px #254e58, 2px 2px 1px #254e58;
 }
 #interests {
