@@ -126,7 +126,7 @@ export default {
 }
 h2 {
   color:  #8dbdbc;
-  text-shadow: 1px 1px 1px #254e58, 2px 2px 1px #254e58;
+  text-shadow: 1px 1px 1px #254e58, 1px 1px 1px #254e58;
 }
 #interests {
   width: 90%;

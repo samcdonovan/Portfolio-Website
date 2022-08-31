@@ -302,6 +302,7 @@ h3 {
   color: #f13f89;
   text-shadow: 1px 1px 1px #caa7b6, 1px 1px 1px #ebdce2;
   font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 130%;
 }
 .project {
   position: relative;

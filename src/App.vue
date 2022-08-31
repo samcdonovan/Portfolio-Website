@@ -170,7 +170,7 @@ body {
   text-align: center;
   /*background-color: #051622;
   */
-  background-image: radial-gradient(
+ /* background-image: radial-gradient(
     circle,
     #d16ba5,
     #c777b9,
@@ -305,6 +305,7 @@ body {
     #b7cdec,
     #b1c9eb
   );
+  */
   background-image: radial-gradient(
     circle,
     #f5f5f5,
@@ -397,7 +398,7 @@ body {
 .title {
   color: #8dbdbc;
   text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
-   font-family: "Lucida Console", "Courier New", monospace; font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 .menu {
   width: 65%;
