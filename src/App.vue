@@ -384,7 +384,7 @@ body {
  */
   /*background-color: #8dbdbc;
   */
-  background-color: #eee2e3;
+  background-color: #d0dbd3;
 }
 #site-title {
   font-family: "Lucida Console", "Courier New", monospace;
