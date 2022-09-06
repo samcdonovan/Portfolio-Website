@@ -424,6 +424,7 @@ body {
 @media (max-width: 960px) {
   #app {
     font-size: 100%;
+    background-color:#f5f5f5;
   }
   #site-title {
     position: relative;

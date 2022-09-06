@@ -264,7 +264,7 @@ input[type="submit"]:hover {
 
 button {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 4vh;
+  font-size: calc(2vh + 2vw);
   width: 25%;
   height: 45px;
   background-color: #254e58;
@@ -302,6 +302,11 @@ button:hover {
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
   }
 }
 </style>
