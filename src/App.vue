@@ -190,6 +190,10 @@ body {
     #efecdb,
     #eeead7
   );
+  
+  /*
+  background-color:#282828;
+  */
   /*
   background-image: linear-gradient(
     to right top,
@@ -200,11 +204,15 @@ body {
     #1c2f3c
   );
   */
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
+  
   padding-bottom: 10vh;
   margin-bottom: 10vh;
   color: #392b1e;
+ /* color:white;
+ */
 }
 #app {
   font-family: Arial, Helvetica, sans-serif;
@@ -223,6 +231,9 @@ body {
   font-size: 110%;
   align-items: stretch;
   margin-bottom: 10vh;
+  /*
+  background-color:#282828;
+  */
 }
 .header {
   width: 80%;
@@ -238,7 +249,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   width: fit-content;
-  font-size: calc(3vh + 2vw);
+  font-size: calc(2.5vh + 2vw);
 }
 #nav-bar {
   padding-top: 1%;
