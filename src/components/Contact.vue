@@ -130,6 +130,10 @@ export default {
   height: fit-content;
   color: black;
 }
+#contact-me p {
+  margin-bottom:-0%;
+  margin-top:0;
+}
 
 #info-paras {
   width: 70%;
@@ -289,6 +293,10 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15%;
+  }
+
+  #contact-me {
+
   }
 
   #contact-info {
