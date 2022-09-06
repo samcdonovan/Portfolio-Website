@@ -128,8 +128,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
-  color: #8dbdbc;
-  text-shadow: 2px 2px 2px #254e58, 3px 3px 1px #254e58;
+  color: black;
 }
 
 #info-paras {

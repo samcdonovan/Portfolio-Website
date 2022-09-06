@@ -125,8 +125,14 @@ export default {
   text-align: justify;
 }
 h2 {
-  color:  #8dbdbc;
-  text-shadow: 1px 1px 1px #254e58, 1px 1px 1px #254e58;
+  width:25%;
+  color: black;
+  /*text-shadow: 1px 1px 1px #254e58, 1px 1px 1px #254e58;
+  */
+  border-bottom: 3px solid #254e58;
+  border-radius: 0 0 30% 30%;
+  margin-left:auto;
+  margin-right:auto;
 }
 #interests {
   width: 90%;

@@ -170,142 +170,7 @@ body {
   text-align: center;
   /*background-color: #051622;
   */
- /* background-image: radial-gradient(
-    circle,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #a59ee1,
-    #afa3e1,
-    #b8a8e1,
-    #d3aad8,
-    #e5afce,
-    #efb6c5,
-    #f3c0c0
-  );
-  background-image: radial-gradient(
-    circle,
-    #747d95,
-    #626e87,
-    #505f7a,
-    #3d516c,
-    #2a435f,
-    #1f3b55,
-    #14334c,
-    #082b42,
-    #082639,
-    #072031,
-    #071b29,
-    #051621
-  );
-  background-image: radial-gradient(
-    circle,
-    #b6cec5,
-    #c0cdbf,
-    #cbccbd,
-    #d3cbbf,
-    #d8cbc4,
-    #decdc5,
-    #e3cec6,
-    #e9d0c7,
-    #efd4c1,
-    #efdbbb,
-    #e9e3b8,
-    #ddecba
-  );
-  background-image: radial-gradient(
-    circle,
-    #b6cec5,
-    #aed5c4,
-    #a8dbc1,
-    #a3e1bc,
-    #a0e7b6,
-    #aee6ab,
-    #bde4a2,
-    #cbe19a,
-    #e0d79a,
-    #edcfa2,
-    #f0c9ad,
-    #ecc6ba
-  );
-  background-image: radial-gradient(
-    circle,
-    #eaecff,
-    #e4f0fe,
-    #e2f3fa,
-    #e5f4f6,
-    #ebf5f3,
-    #e9f3ee,
-    #e9f0e8,
-    #eaede2,
-    #e8e5d5,
-    #e8dbc8,
-    #ead1bf,
-    #ecc6ba
-  );
-  background-image: radial-gradient(
-    circle,
-    #eaecff,
-    #ebeefd,
-    #eceffc,
-    #eef1fa,
-    #f0f2f8,
-    #dee0e7,
-    #cccfd6,
-    #babec6,
-    #9198a3,
-    #6a7382,
-    #445062,
-    #1f3044
-  );
-  background-image: radial-gradient(
-    circle,
-    #2c3f57,
-    #293c53,
-    #26384e,
-    #24354a,
-    #213246,
-    #1f2f43,
-    #1d2d3f,
-    #1b2a3c,
-    #192738,
-    #182534,
-    #162231,
-    #15202d
-  );
-  background-image: radial-gradient(
-    circle,
-    #1c2838,
-    #1a2534,
-    #17222f,
-    #151f2b,
-    #131c27,
-    #121a24,
-    #101822,
-    #0f161f,
-    #0e141d,
-    #0d131a,
-    #0c1118,
-    #0a0f16
-  );
-  background-image: radial-gradient(
-    circle,
-    #d6e2f2,
-    #d5e2f2,
-    #d4e1f2,
-    #d3e1f2,
-    #d2e0f2,
-    #cfdef1,
-    #ccdcf1,
-    #c9daf0,
-    #c3d6ef,
-    #bdd2ee,
-    #b7cdec,
-    #b1c9eb
-  );
-  */
+
   background-image: radial-gradient(
     circle,
     #f5f5f5,
@@ -384,7 +249,7 @@ body {
  */
   /*background-color: #8dbdbc;
   */
-  background-color: #d0dbd3;
+  background-color: #98c4b5;
 }
 #site-title {
   font-family: "Lucida Console", "Courier New", monospace;
@@ -396,8 +261,11 @@ body {
 }
 #site-title p,
 .title {
-  color: #8dbbbd;
-  text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
+  color: #171616;
+  /*text-shadow: 1px 1px 1px #f4a0c3, 2px 2px 1px #f4a0c3;
+  */
+  /*text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
+  */
   font-family: "Lucida Console", "Courier New", monospace;
 }
 .menu {
