@@ -122,7 +122,7 @@ export default {
 
 #contact-me {
   width: 60%;
-  font-size: calc(3vh + 2vw);
+  font-size: calc(2.5vh + 2vw);
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;

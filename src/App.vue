@@ -58,7 +58,11 @@
       </div>
       <nav class="nav" id="nav">
         <ul class="nav-list">
-          <li><router-link class="phone-item" to="/">HOME</router-link></li>
+          <li>
+            <router-link class="phone-item" to="/"
+              ><span>HOME</span></router-link
+            >
+          </li>
           <li>
             <router-link class="phone-item" to="/about"
               ><span>ABOUT</span></router-link
@@ -66,7 +70,7 @@
           </li>
           <li>
             <router-link class="phone-item" to="/projects"
-              >PROJECTS</router-link
+              ><span>PROJECTS</span></router-link
             >
           </li>
           <li>
@@ -226,7 +230,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3%;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 .title {
   margin-left: auto;
@@ -239,7 +243,7 @@ body {
 #nav-bar {
   padding-top: 1%;
   border-bottom: 5px solid #254e58;
-  border-radius: 0 0 40% 40%;
+  border-radius: 0 0 30% 30%;
   padding-bottom: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
@@ -248,7 +252,7 @@ body {
  */
   /*background-color: #8dbdbc;
   */
-  background-color: #bbe6d8;
+  background-color: #ccdcea;
 }
 
 #site-title p,
@@ -263,7 +267,7 @@ body {
 #site-title {
   font-size: calc(3vh + 2vw);
   height: 10vh + 10vw;
-  z-index:2;
+  z-index: 2;
 }
 #site-title p {
   margin: 0;
@@ -317,6 +321,7 @@ body {
   cursor: pointer;
   z-index: 6;
   padding-top: 15%;
+  margin-top: 20px;
 }
 
 .bar {
@@ -389,9 +394,9 @@ body {
   z-index: 0;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, #bbe6d8, #bbe6d8);
+  background: radial-gradient(circle, #ccdcea, #ccdcea);
   border-bottom: 5px solid #254e58;
- 
+
   /*box-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;*/
   border-radius: 20%;
   transition: 0.3s ease;
@@ -439,6 +444,9 @@ body {
   #app {
     font-size: 100%;
     background-color: #f5f5f5;
+  }
+  #nav-bar {
+    border-radius: 0 0 20% 20%;
   }
   .change-bg {
     visibility: visible;

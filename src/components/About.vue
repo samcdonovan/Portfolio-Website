@@ -195,6 +195,9 @@ h2 {
   h2{
     width:50%;
   }
+  .header {
+    width:90%;
+  }
   #interests-body {
     width: 100%;
   }
