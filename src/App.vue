@@ -234,7 +234,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   width: fit-content;
-  font-size: 7vh;
+  font-size: calc(3vh + 2vw);
 }
 #nav-bar {
   padding-top: 1%;
@@ -250,14 +250,7 @@ body {
   */
   background-color: #bbe6d8;
 }
-#site-title {
-  font-family: "Lucida Console", "Courier New", monospace;
-  font-size: calc(2.3vh + 2.3vw);
-  height: 10vh + 10vw;
-}
-#site-title p {
-  margin: 0;
-}
+
 #site-title p,
 .title {
   color: #171616;
@@ -266,6 +259,14 @@ body {
   /*text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
   */
   font-family: "Lucida Console", "Courier New", monospace;
+}
+#site-title {
+  font-size: calc(3vh + 2vw);
+  height: 10vh + 10vw;
+  z-index:2;
+}
+#site-title p {
+  margin: 0;
 }
 .menu {
   width: 65%;
@@ -314,7 +315,7 @@ body {
   height: 30px;
   margin: 15px 0 20px 20px;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 6;
   padding-top: 15%;
 }
 
@@ -385,11 +386,13 @@ body {
 }
 
 .menu-bg {
-  z-index: 1;
+  z-index: 0;
   width: 0;
   height: 0;
   background: radial-gradient(circle, #bbe6d8, #bbe6d8);
-  box-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
+  border-bottom: 5px solid #254e58;
+ 
+  /*box-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;*/
   border-radius: 20%;
   transition: 0.3s ease;
   pointer-events: none;
@@ -416,7 +419,7 @@ body {
 }
 
 .change-bg {
-  width: 250px;
+  width: 230px;
   height: 250px;
   transform: translate(-60%, -30%);
   visibility: hidden;
@@ -452,10 +455,7 @@ body {
     position: relative;
     width: 90%;
     float: right;
-    margin-top: 2%;
-    font-size: 7.5vw;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 5%;
   }
   .menu {
     display: none;

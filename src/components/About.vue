@@ -108,7 +108,7 @@ export default {
 }
 
 .about-intro {
-  width: 80%;
+  width: 100%;
   border-bottom: solid;
   margin-left: auto;
   margin-right: auto;
@@ -192,6 +192,9 @@ h2 {
   float: right;
 }
 @media (max-width: 960px) {
+  h2{
+    width:50%;
+  }
   #interests-body {
     width: 100%;
   }
