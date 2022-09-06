@@ -81,15 +81,16 @@ export default {
   #home-info {
     position: relative;
     width: 80%;
+    height:fit-content;
     float: right;
     border-style: solid;
     border-radius: 5px;
     text-align: left;
     padding: 1%;
-    bottom: -10%;
+    bottom:-50px;
   }
   #img-me img {
-    height: 95%;
+    height: 100%;
     width: 95%;
   }
   #img-me {
