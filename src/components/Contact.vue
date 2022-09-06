@@ -122,7 +122,7 @@ export default {
 
 #contact-me {
   width: 60%;
-  font-size: 8vh;
+  font-size: calc(3vh + 2vw);
   margin-top: auto;
   margin-bottom: auto;
   margin-left: auto;
@@ -132,7 +132,7 @@ export default {
 }
 #contact-me p {
   margin-bottom:-0%;
-  margin-top:0;
+  margin-top:15px;
 }
 
 #info-paras {
@@ -268,7 +268,7 @@ input[type="submit"]:hover {
 
 button {
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: calc(2vh + 2vw);
+  font-size: calc(2vh + 1vw);
   width: 25%;
   height: 45px;
   background-color: #254e58;
@@ -295,10 +295,6 @@ button:hover {
     margin-top: 5%;
   }
 
-  #contact-me {
-
-  }
-
   #contact-info {
     border-left: none;
     min-width: 90%;
@@ -314,7 +310,10 @@ button:hover {
   input[type="text"],
   input[type="email"],
   textarea {
-    width: 90%;
+    width: 100%;
+  }
+  #name-fields {
+    width:100%;
   }
 }
 </style>

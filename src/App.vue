@@ -235,7 +235,6 @@ body {
   margin-bottom: auto;
   width: fit-content;
   font-size: 7vh;
-
 }
 #nav-bar {
   padding-top: 1%;
@@ -347,29 +346,31 @@ body {
   width: 100%;
   height: fit-content;
   top: 50%;
-left:10px;
-  margin-left:auto;
-  margin-right:auto;
+  left: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav ul {
-  padding:0;
+  padding: 0;
 }
 
 .nav li {
   list-style: none;
-  margin:0;
-  padding:0;
-  padding-bottom: 6px;
-  width:fit-content;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 7px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .nav li a {
   color: black;
   text-decoration: none;
   font-size: 3vw;
+  text-align: center;
 }
 
 .nav li a:hover {
@@ -388,7 +389,7 @@ left:10px;
   width: 0;
   height: 0;
   background: radial-gradient(circle, #bbe6d8, #bbe6d8);
-  box-shadow:1px 1px 1px #254e58, 3px 3px 1px #254e58;
+  box-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
   border-radius: 20%;
   transition: 0.3s ease;
   pointer-events: none;
@@ -434,9 +435,9 @@ left:10px;
 @media (max-width: 960px) {
   #app {
     font-size: 100%;
-    background-color:#f5f5f5;
+    background-color: #f5f5f5;
   }
-  .change-bg{
+  .change-bg {
     visibility: visible;
   }
   #site-title {
@@ -467,7 +468,6 @@ left:10px;
     float: left;
     position: absolute;
   }
-
 }
 
 /*
