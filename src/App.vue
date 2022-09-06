@@ -347,19 +347,27 @@ body {
   width: 100%;
   height: fit-content;
   top: 50%;
+left:10px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .nav ul {
-  padding: 0 22px;
+  padding:0;
 }
 
 .nav li {
-  padding-bottom: 40%;
   list-style: none;
+  margin:0;
+  padding:0;
+  padding-bottom: 6px;
+  width:fit-content;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .nav li a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 3vw;
 }
@@ -379,7 +387,8 @@ body {
   z-index: 1;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, #dc052d, #dc052d);
+  background: radial-gradient(circle, #bbe6d8, #bbe6d8);
+  box-shadow:1px 1px 1px #254e58, 3px 3px 1px #254e58;
   border-radius: 20%;
   transition: 0.3s ease;
   pointer-events: none;
@@ -406,9 +415,10 @@ body {
 }
 
 .change-bg {
-  width: 280px;
+  width: 250px;
   height: 250px;
   transform: translate(-60%, -30%);
+  visibility: hidden;
 }
 
 .phone-item:hover,
@@ -425,6 +435,9 @@ body {
   #app {
     font-size: 100%;
     background-color:#f5f5f5;
+  }
+  .change-bg{
+    visibility: visible;
   }
   #site-title {
     position: relative;
@@ -454,19 +467,7 @@ body {
     float: left;
     position: absolute;
   }
-  /*
-  #phone-menu {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    width: 80%;
-    height: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    text-align: center;
-  }
-  */
+
 }
 
 /*
