@@ -2,55 +2,8 @@
   <div id="nav-bar">
     <div id="site-title">
       <p>Samuel Donovan</p>
-
-      <!--
-      <div id="menu-container">
-        <div id="phone-menu">
-          <button v-on:click="openDropdown()" id="drop-button">
-            <div id="bar1" class="bar"></div>
-            <div id="bar2" class="bar"></div>
-            <div id="bar3" class="bar"></div>
-          </button>
-
-          <ul id="dropdown" class="dropdown-links">
-            <li><router-link class="phone-item" to="/">HOME</router-link></li>
-            <li>
-              <router-link class="phone-item" to="/about"
-                ><span>ABOUT</span></router-link
-              >
-            </li>
-            <li>
-              <router-link class="phone-item" to="/projects"
-                >PROJECTS</router-link
-              >
-            </li>
-            <li>
-              <router-link class="phone-item" to="/contact"
-                ><span>CONTACT</span></router-link
-              >
-            </li>
-          </ul>
-          
-          <div id="dropdown" class="dropdown-links">
-            <router-link class="phone-item" to="/"
-              ><span>HOME</span></router-link
-            >
-            <router-link class="phone-item" to="/about"
-              ><span>ABOUT</span></router-link
-            >
-            <router-link class="phone-item" to="/projects"
-              ><span>PROJECTS</span></router-link
-            >
-            <router-link class="phone-item" to="/contact"
-              ><span>CONTACT</span></router-link
-            >
-          </div>
-          
-        </div>
-      </div> -->
     </div>
     <div id="phone-menu">
-      <!--<div class="button-container">-->
       <div v-on:click="menuOnClick()" id="menu-bar">
         <div id="bar1" class="bar"></div>
         <div id="bar2" class="bar"></div>
@@ -99,23 +52,58 @@
   </div>
 
   <router-view />
-
-  <!--<footer></footer>-->
 </template>
 
 <script>
 export default {
   name: "App",
-
+ 
+  /*created() {
+    window.addEventListener("resize", function () {
+      this.window.width = window.innerWidth;
+      this.window.height = window.innerHeight;
+    });
+  },*./
   /* handles onClicks on the page to toggle the dropdown menu */
   mounted: function () {
     document.addEventListener("click", this.onClick);
-    document.addEventListener("load", function () {
+    /* document.readyState(
+      setTimeout(function () {
+        let viewheight = window.innerHeight;
+        let viewwidth = window.innerWidth;
+        let viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute(
+          "content",
+          "height=" +
+            viewheight +
+            "px, width=" +
+            viewwidth +
+            "px, initial-scale=1.0"
+        );
+      }, 300)
+    );*/
+
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(function () {
+        let viewheight = window.innerHeight;
+        let viewwidth = window.innerWidth;
+        console.log(viewheight + " " + viewwidth);
+        let viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute(
+          "content",
+          "height=" +
+            viewheight +
+            "px, width=" +
+            viewwidth +
+            "px"
+        );
+      }, 300);
+      /*
       var viewport = document.querySelector("meta[name=viewport]");
       viewport.setAttribute(
         "content",
         viewport.content + ", height=" + window.innerHeight
-      );
+      );*/
     });
   },
   beforeUnmount: function () {
