@@ -110,6 +110,13 @@ export default {
   /* handles onClicks on the page to toggle the dropdown menu */
   mounted: function () {
     document.addEventListener("click", this.onClick);
+    document.addEventListener("load", function () {
+      var viewport = document.querySelector("meta[name=viewport]");
+      viewport.setAttribute(
+        "content",
+        viewport.content + ", height=" + window.innerHeight
+      );
+    });
   },
   beforeUnmount: function () {
     document.removeEventListener("click", this.onClick);
@@ -190,7 +197,7 @@ body {
     #efecdb,
     #eeead7
   );
-  
+
   /*
   background-color:#282828;
   */
@@ -204,14 +211,14 @@ body {
     #1c2f3c
   );
   */
-  
+
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+
   padding-bottom: 10vh;
   margin-bottom: 10vh;
   color: #392b1e;
- /* color:white;
+  /* color:white;
  */
 }
 #app {
