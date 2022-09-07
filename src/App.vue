@@ -57,32 +57,12 @@
 <script>
 export default {
   name: "App",
- 
-  /*created() {
-    window.addEventListener("resize", function () {
-      this.window.width = window.innerWidth;
-      this.window.height = window.innerHeight;
-    });
-  },*./
-  /* handles onClicks on the page to toggle the dropdown menu */
-  mounted: function () {
-    document.addEventListener("click", this.onClick);
-    /* document.readyState(
-      setTimeout(function () {
-        let viewheight = window.innerHeight;
-        let viewwidth = window.innerWidth;
-        let viewport = document.querySelector("meta[name=viewport]");
-        viewport.setAttribute(
-          "content",
-          "height=" +
-            viewheight +
-            "px, width=" +
-            viewwidth +
-            "px, initial-scale=1.0"
-        );
-      }, 300)
-    );*/
 
+  mounted: function () {
+    /* handles onClicks on the page to toggle the dropdown menu */
+    document.addEventListener("click", this.onClick);
+
+    /* sets window height to avoid window resizing issues on mobile */
     document.addEventListener("DOMContentLoaded", function () {
       setTimeout(function () {
         let viewheight = window.innerHeight;
@@ -91,19 +71,9 @@ export default {
         let viewport = document.querySelector("meta[name=viewport]");
         viewport.setAttribute(
           "content",
-          "height=" +
-            viewheight +
-            "px, width=" +
-            viewwidth +
-            "px"
+          "height=" + viewheight + "px, width=" + viewwidth + "px"
         );
       }, 300);
-      /*
-      var viewport = document.querySelector("meta[name=viewport]");
-      viewport.setAttribute(
-        "content",
-        viewport.content + ", height=" + window.innerHeight
-      );*/
     });
   },
   beforeUnmount: function () {
