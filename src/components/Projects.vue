@@ -299,7 +299,7 @@ export default {
   }
 }
 h3 {
-  color: #f13f89;
+  color: var(--highlight-color);
   text-shadow: 1px 1px 1px #caa7b6, 1px 1px 1px #ebdce2;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 130%;
@@ -307,7 +307,6 @@ h3 {
 .project {
   position: relative;
   border-style: solid;
-  background-color: #8dbdbc;
   background-color: rgba(110, 156, 202, 0.544);
   height: 60vh;
   padding: 10px;

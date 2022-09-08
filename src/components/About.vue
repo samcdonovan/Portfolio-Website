@@ -126,10 +126,10 @@ export default {
 }
 h2 {
   width:25%;
-  color: black;
+  color: var(--text-color);
   /*text-shadow: 1px 1px 1px #254e58, 1px 1px 1px #254e58;
   */
-  border-bottom: 3px solid #254e58;
+  border-bottom: 3px solid var(--underline-color);
   border-radius: 0 0 30% 30%;
   margin-left:auto;
   margin-right:auto;
@@ -143,7 +143,6 @@ h2 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-/*  background-color: rgba(110, 156, 202, 0.544);*/
 }
 #interests-body {
   float: left;
@@ -155,7 +154,7 @@ h2 {
 }
 .connect-container {
   height: 100%;
-  background-image: linear-gradient(#000, #000);
+  background-image: linear-gradient(var(--text-color), var(--text-color));
   background-size: 2px 100%;
   background-repeat: no-repeat;
   background-position: center center;

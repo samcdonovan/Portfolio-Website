@@ -128,7 +128,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
-  color: black;
+  color: var(--text-color);
 }
 #contact-me p {
   margin-bottom:-0%;
@@ -224,7 +224,7 @@ input[type="submit"] {
   background: #64b5f6;
   margin: 0 auto;
   outline: 0;
-  color: white;
+  color: var(--text-color);
   border: 0;
   padding: 12px 24px;
   border-radius: 4px;

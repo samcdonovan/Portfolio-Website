@@ -119,6 +119,20 @@ export default {
 </script>
 
 <style>
+:root,
+:root.light {
+  --bg-color: #f5f5f5;
+  --text-color: #123;
+  --title-color: #123;
+  --nav-bg: #ccdcea;
+  --underline-color:#254e58;
+  --highlight-color:#f13f89;
+}
+
+:root.dark {
+  --bg-color: #121212;
+  --text-color: #e2eff9;
+}
 html {
   max-width: 1980px;
   margin: 0 auto;
@@ -137,9 +151,7 @@ body {
   justify-content: stretch;
   align-items: stretch;
   text-align: center;
-  /*background-color: #051622;
-  */
-
+/*
   background-image: radial-gradient(
     circle,
     #f5f5f5,
@@ -155,29 +167,17 @@ body {
     #efecdb,
     #eeead7
   );
-
+*/
   /*
   background-color:#282828;
   */
-  /*
-  background-image: linear-gradient(
-    to right top,
-    #051622,
-    #0b1c28,
-    #11222f,
-    #162935,
-    #1c2f3c
-  );
-  */
-
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: var(--bg-color);
 
   padding-bottom: 10vh;
   margin-bottom: 10vh;
-  color: #392b1e;
-  /* color:white;
- */
+  color: var(--text-color);
 }
 #app {
   font-family: Arial, Helvetica, sans-serif;
@@ -218,22 +218,18 @@ body {
 }
 #nav-bar {
   padding-top: 1%;
-  border-bottom: 5px solid #254e58;
+  border-bottom: 5px solid var(--underline-color);
   border-radius: 0 0 30% 30%;
   padding-bottom: 0;
   margin-bottom: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-color: #b56357;
- */
-  /*background-color: #8dbdbc;
-  */
-  background-color: #ccdcea;
+  background-color: var(--nav-bg);
 }
 
 #site-title p,
 .title {
-  color: #171616;
+  color: var(--title-color);
   /*text-shadow: 1px 1px 1px #f4a0c3, 2px 2px 1px #f4a0c3;
   */
   /*text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
@@ -265,13 +261,13 @@ body {
   margin-right: auto;
   text-decoration: none;
   text-align: center;
-  color: black;
+  color: var(--text-color);
 }
 .menu-item span {
   padding: 1%;
 }
 .menu-item:hover span {
-  color: #f13f89;
+  color: var(--hightlight-color);
   transition: 0.15s;
   border-bottom: solid;
   font-weight: bold;
@@ -280,7 +276,7 @@ body {
   color: black;
 }
 .router-link-exact-active span {
-  color: #f13f89;
+  color: var(--highlight-color);
   border-bottom: solid;
   font-weight: bold;
 }
@@ -349,7 +345,7 @@ body {
 }
 
 .nav li a {
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 3vw;
   text-align: center;
@@ -370,10 +366,8 @@ body {
   z-index: 0;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, #ccdcea, #ccdcea);
-  border-bottom: 5px solid #254e58;
-
-  /*box-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;*/
+  background: radial-gradient(circle, var(--nav-bg), var(--nav-bg));
+  border-bottom: 5px solid var(--underline-color);
   border-radius: 20%;
   transition: 0.3s ease;
   pointer-events: none;
@@ -408,7 +402,6 @@ body {
 
 .phone-item:hover,
 .phone-item:focus {
-  background: #357180;
   transition: background 0.25s;
 }
 
@@ -419,7 +412,7 @@ body {
 @media (max-width: 960px) {
   #app {
     font-size: 100%;
-    background-color: #f5f5f5;
+    background-color: var(--bg-color);
   }
   #nav-bar {
     border-radius: 0 0 20% 20%;
@@ -453,66 +446,4 @@ body {
     position: absolute;
   }
 }
-
-/*
-#drop-button {
-  position: relative;
-  width: 45px;
-  height: 40px;
-  margin: 30px 0 20px 20px;
-  cursor: pointer;
-  top: -100%;
-}
-#menu-container {
-  display: none;
-  position: absolute;
-  left: 2%;
-  width: 20%;
-  height: 30%;
-  padding: 2%;
-  margin: 0;
-  z-index: 1;
-  transition-duration: 0.25s;
-}
-#menu-container * {
-  border-style: dotted;
-}
-
-.dropdown-links {
-  visibility: hidden;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: inherit;
-  height: 100%;
-  padding-left: 0;
-  margin-top: 0;
-  text-align: center;
-  transition: all 0.4s ease-out;
-  width: 100%;
-  font-size: 3vw;
-  list-style-type: none;
-  background: radial-gradient(circle, #dc052d, #dc052d);
-}
-.dropdown-links a {
-  color: black;
-  text-decoration: none;
-  display: block;
-  width: inherit;
-  border-radius: 2px;
-  position: relative;
-  background-color: #254e58;
-  border-top: 1px solid #eae7dc;
-  transition: background 3s;
-  transition-duration: 0.25s;
-  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.35);
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  align-items: center;
-  text-align: center;
-}
-*/
 </style>
