@@ -67,7 +67,6 @@ export default {
       setTimeout(function () {
         let viewheight = window.innerHeight;
         let viewwidth = window.innerWidth;
-        console.log(viewheight + " " + viewwidth);
         let viewport = document.querySelector("meta[name=viewport]");
         viewport.setAttribute(
           "content",
@@ -121,12 +120,29 @@ export default {
 <style>
 :root,
 :root.light {
-  --bg-color: #f5f5f5;
+  /*--bg-color: #f5f5f5;
   --text-color: #123;
   --title-color: #123;
   --nav-bg: #ccdcea;
-  --underline-color:#254e58;
-  --highlight-color:#f13f89;
+  --underline-color: #254e58;
+  --highlight-color: #f13f89;
+  */
+  /*
+  --bg-color: #fefbe9;
+  --text-color: #25582d;
+  --title-color: #f6c453;
+  --nav-bg: #e1eedd;
+  --underline-color: #183a1d;
+  --highlight-color: #f13f89;
+  --box-bg: #e1eedd;
+  */
+  --bg-color: #fffff;
+  --text-color: black;
+  --title-color: #2b6777;
+  --nav-bg: #f2f2f2;
+  --underline-color: #183a1d;
+  --highlight-color: #52ab98;
+  --box-bg: #c8d8e4;
 }
 
 :root.dark {
@@ -151,7 +167,7 @@ body {
   justify-content: stretch;
   align-items: stretch;
   text-align: center;
-/*
+  /*
   background-image: radial-gradient(
     circle,
     #f5f5f5,
@@ -174,7 +190,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: var(--bg-color);
-
   padding-bottom: 10vh;
   margin-bottom: 10vh;
   color: var(--text-color);
@@ -192,7 +207,6 @@ body {
   left: 0;
   width: 100%;
   justify-content: stretch;
-  /*font-size: 3vh; */
   font-size: 110%;
   align-items: stretch;
   margin-bottom: 10vh;
@@ -218,7 +232,7 @@ body {
 }
 #nav-bar {
   padding-top: 1%;
-  border-bottom: 5px solid var(--underline-color);
+  border-bottom: 3px solid var(--underline-color);
   border-radius: 0 0 30% 30%;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -243,6 +257,8 @@ body {
 }
 #site-title p {
   margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-family: 'Sofia';
 }
 .menu {
   width: 65%;
@@ -253,7 +269,7 @@ body {
 }
 .menu-item {
   width: 20%;
-  font-size: 3vh;
+  font-size: 1.5vh + 1.5vw;
   padding-bottom: 0.5%;
   margin-top: auto;
   margin-bottom: auto;
@@ -261,7 +277,7 @@ body {
   margin-right: auto;
   text-decoration: none;
   text-align: center;
-  color: var(--text-color);
+  color: var(--highlight-color);
 }
 .menu-item span {
   padding: 1%;
@@ -409,7 +425,7 @@ body {
   visibility: visible;
   display: visible;
 }
-@media (max-width: 960px) {
+@media screen and (max-device-width: 960px) {
   #app {
     font-size: 100%;
     background-color: var(--bg-color);

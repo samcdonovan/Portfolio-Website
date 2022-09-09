@@ -308,6 +308,7 @@ h3 {
   position: relative;
   border-style: solid;
   background-color: rgba(110, 156, 202, 0.544);
+  background-color: var(--box-bg);
   height: 60vh;
   padding: 10px;
   transition: transform 0.2s;

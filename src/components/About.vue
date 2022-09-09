@@ -138,11 +138,12 @@ h2 {
   width: 90%;
   height: 80%;
   border-style: solid;
-  padding: 1%;
+  padding: 3%;
   border-radius: 5px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--box-bg);
 }
 #interests-body {
   float: left;
@@ -174,6 +175,7 @@ h2 {
   border-radius: 5px;
   padding: 1%;
   display: inline-block;
+  background-color: var(--box-bg);
 }
 #experience-1,
 #experience-2 {
