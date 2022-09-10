@@ -130,7 +130,7 @@ h2 {
   /*text-shadow: 1px 1px 1px #254e58, 1px 1px 1px #254e58;
   */
   border-bottom: 3px solid var(--underline-color);
-  border-radius: 0 0 30% 30%;
+  border-radius: 0 0 15% 15%;
   margin-left:auto;
   margin-right:auto;
 }
