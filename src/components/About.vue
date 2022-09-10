@@ -126,7 +126,7 @@ export default {
 }
 h2 {
   width:25%;
-  color: var(--text-color);
+  color: var(--title-color);
   /*text-shadow: 1px 1px 1px #254e58, 1px 1px 1px #254e58;
   */
   border-bottom: 3px solid var(--underline-color);
@@ -143,7 +143,7 @@ h2 {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--box-bg);
+  background-color: var(--nav-bg);
 }
 #interests-body {
   float: left;
@@ -175,7 +175,7 @@ h2 {
   border-radius: 5px;
   padding: 1%;
   display: inline-block;
-  background-color: var(--box-bg);
+  background-color: var(--nav-bg);
 }
 #experience-1,
 #experience-2 {

@@ -300,7 +300,11 @@ export default {
 }
 h3 {
   color: var(--highlight-color);
+  color: #183a1d;
+  /*
   text-shadow: 1px 1px 1px #caa7b6, 1px 1px 1px #ebdce2;
+  */
+  
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 130%;
 }

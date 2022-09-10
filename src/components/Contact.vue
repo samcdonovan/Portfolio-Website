@@ -128,7 +128,8 @@ export default {
   margin-left: auto;
   margin-right: auto;
   height: fit-content;
-  color: var(--text-color);
+  color: var(--title-color);
+  font-family: var(--title-font);
 }
 #contact-me p {
   margin-bottom:-0%;

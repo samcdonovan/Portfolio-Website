@@ -143,6 +143,7 @@ export default {
   --underline-color: #183a1d;
   --highlight-color: #52ab98;
   --box-bg: #c8d8e4;
+  --title-font: "Sofia", "Lucida Console", "Courier New", monospace;
 }
 
 :root.dark {
@@ -220,7 +221,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3%;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 .title {
   margin-left: auto;
@@ -248,7 +249,7 @@ body {
   */
   /*text-shadow: 1px 1px 1px #254e58, 3px 3px 1px #254e58;
   */
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: var(--title-font);
 }
 #site-title {
   font-size: calc(3vh + 2vw);
@@ -257,8 +258,6 @@ body {
 }
 #site-title p {
   margin: 0;
-  font-family: "Trebuchet MS", sans-serif;
-  font-family: 'Sofia';
 }
 .menu {
   width: 65%;
@@ -429,6 +428,9 @@ body {
   #app {
     font-size: 100%;
     background-color: var(--bg-color);
+  }
+  .header {
+    margin-top: 5%;
   }
   #nav-bar {
     border-radius: 0 0 20% 20%;
