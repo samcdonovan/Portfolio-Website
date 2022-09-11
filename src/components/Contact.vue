@@ -1,7 +1,7 @@
 <template>
   <div class="contact-header">
     <div id="contact-me">
-      <p>CONTACT ME</p>
+      <p>Contact Me</p>
     </div>
     <div id="contact-info">
       <div id="info-paras">

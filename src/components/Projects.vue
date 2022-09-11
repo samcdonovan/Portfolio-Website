@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <p class="title">PROJECTS</p>
+    <p class="title">Projects</p>
     <p class="header-desc">
       Here are some of my favourite and most interesting projects that I
       completed whilst studying Computer Science.

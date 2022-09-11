@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <p class="title">ABOUT ME</p>
+    <p class="title">About Me</p>
     <p class="about-intro">
       I recently graduated from university with a First-class Honours degree in
       BSc Computer Science, and my current passions lie in Backend development,
