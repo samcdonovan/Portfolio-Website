@@ -1128,7 +1128,7 @@ h2,
     height: 100%;
   }
   #experience {
-    width: 100%;
+    width: 103%;
     margin-left:auto;
     margin-right:auto;
   }
