@@ -911,9 +911,9 @@ export default {
 };
 </script>
 <style scoped>
-.gr_custom_container_1664375700, .gr_custom_container_1664375869 {
+.gr_custom_container_1664375700,
+.gr_custom_container_1664375869 {
   /* customize your Goodreads widget container here*/
-
   border-radius: 10px;
   padding: 10px 5px 10px 5px;
   background-color: #ffffff;
@@ -921,14 +921,15 @@ export default {
   width: 300px;
 }
 
-.gr_custom_header_1664375700, 
+.gr_custom_header_1664375700,
 .gr_custom_header_1664375869 {
   width: 80%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 120%;
 }
-.gr_custom_each_container_1664375700,.gr_custom_each_container_1664375869  {
+.gr_custom_each_container_1664375700,
+.gr_custom_each_container_1664375869 {
   /* customize each individual book container here */
   width: 90%;
   clear: both;
@@ -938,13 +939,16 @@ export default {
   border-bottom: 1px solid #aaa;
   text-align: left;
 }
-.gr_custom_each_container_1664375700 a, .gr_custom_each_container_1664375869 a  {
+.gr_custom_each_container_1664375700 a,
+.gr_custom_each_container_1664375869 a {
   text-decoration: none;
 }
-.gr_custom_each_container_1664375700 a:visited, .gr_custom_each_container_1664375869 a:visited  {
+.gr_custom_each_container_1664375700 a:visited,
+.gr_custom_each_container_1664375869 a:visited {
   color: blue;
 }
-.gr_custom_book_container_1664375700,.gr_custom_book_container_1664375869  {
+.gr_custom_book_container_1664375700,
+.gr_custom_book_container_1664375869 {
   /* customize your book covers here */
   overflow: hidden;
   height: 160px;
@@ -952,7 +956,8 @@ export default {
   margin-right: 4px;
   width: 98px;
 }
-.gr_custom_author_1664375700, .gr_custom_author_1664375869  {
+.gr_custom_author_1664375700,
+.gr_custom_author_1664375869 {
   /* customize your author names here */
   font-size: 10px;
 }
@@ -960,7 +965,8 @@ export default {
   /* customize your rating stars here */
   float: right;
 }
-.gr_custom_title_1664375700, .gr_custom_title_1664375869 {
+.gr_custom_title_1664375700,
+.gr_custom_title_1664375869 {
   /* customize your author names here */
   font-size: 14px;
 }
@@ -968,17 +974,18 @@ export default {
 #projects-link:visited {
   color: blue;
 }
-.recent-reads, .want-to-read{
+.recent-reads,
+.want-to-read {
   height: 65%;
   width: 100%;
   position: relative;
   border-style: solid;
   overflow-y: scroll;
-  overflow-x:hidden;
+  overflow-x: hidden;
   border-radius: 5px;
 }
-.want-to-read{
-  margin-top:10%;
+.want-to-read {
+  margin-top: 10%;
 }
 .sidebar {
   float: right;
@@ -1015,7 +1022,7 @@ export default {
 }
 h2,
 .gr_custom_header_1664375700 a,
- .gr_custom_header_1664375869 a {
+.gr_custom_header_1664375869 a {
   width: 25%;
   color: var(--title-color);
   border-bottom: 3px solid var(--underline-color);
@@ -1024,7 +1031,7 @@ h2,
   margin-right: auto;
 }
 .gr_custom_header_1664375700 a,
- .gr_custom_header_1664375869 a {
+.gr_custom_header_1664375869 a {
   border-bottom: none;
 }
 #interests {
@@ -1089,6 +1096,20 @@ h2,
   float: right;
 }
 @media (max-width: 960px) {
+  .sidebar {
+    visibility: hidden;
+    position:absolute;
+    height:0;
+  }
+  .about-container{
+    width:100%;
+  }
+  .about-body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+  }
   h2 {
     width: 50%;
   }
@@ -1107,7 +1128,9 @@ h2,
     height: 100%;
   }
   #experience {
-    width: 90%;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
   }
   #experience-1 ul,
   #experience-2 ul {
