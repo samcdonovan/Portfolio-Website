@@ -923,7 +923,7 @@ export default {
 
 .gr_custom_header_1664375700, 
 .gr_custom_header_1664375869 {
-  width: 100%;
+  width: 80%;
   margin-bottom: 5px;
   text-align: center;
   font-size: 120%;
@@ -964,41 +964,7 @@ export default {
   /* customize your author names here */
   font-size: 14px;
 }
-/*
- .gr_custom_container_1664375869 {
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 10px 5px 10px 5px;
-  background-color: #ffffff;
-  color: #000000;
-  width: 300px;
-}
-.gr_custom_header_1664375869 {
-  border-bottom: 1px solid gray;
-  width: 100%;
-  margin-bottom: 5px;
-  text-align: center;
-  font-size: 120%;
-}
-.gr_custom_each_container_1664375869 {
-  width: 100%;
-  clear: both;
-  margin-bottom: 10px;
-  overflow: auto;
-  padding-bottom: 4px;
-  border-bottom: 1px solid #aaa;
-}
-.gr_custom_book_container_1664375869 {
-  overflow: hidden;
-  height: 160px;
-  float: left;
-  margin-right: 4px;
-  width: 98px;
-}
-.gr_custom_author_1664375869 {
-  font-size: 10px;
-}
-*/
+
 #projects-link:visited {
   color: blue;
 }
@@ -1007,7 +973,8 @@ export default {
   width: 100%;
   position: relative;
   border-style: solid;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x:hidden;
   border-radius: 5px;
 }
 .want-to-read{
@@ -1052,7 +1019,7 @@ h2,
   width: 25%;
   color: var(--title-color);
   border-bottom: 3px solid var(--underline-color);
-  border-radius: 0 0 15% 15%;
+  border-radius: 0 0 10% 10%;
   margin-left: auto;
   margin-right: auto;
 }
