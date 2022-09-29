@@ -1076,7 +1076,7 @@ h2,
   margin-top:1%;
 }
 .connect-container {
-  height: 5%;
+  height: 10px;
   background-image: linear-gradient(var(--text-color), var(--text-color));
   background-size: 2px 100%;
   background-repeat: no-repeat;
@@ -1090,7 +1090,7 @@ h2,
 }
 
 #experience {
-  height: 100%;
+  min-height: 55%;
   width: 90%;
   position: relative;
   border-style: solid;
