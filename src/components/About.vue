@@ -1045,6 +1045,7 @@ h2,
   margin-left: auto;
   margin-right: auto;
   background-color: var(--nav-bg);
+  overflow:auto;
 }
 #interests-body {
   float: left;
@@ -1052,9 +1053,9 @@ h2,
   height: 100%;
 }
 #interests img {
-  width: 30%;
-  height: 50%;
-  margin-top: 5%;
+  width: 35%;
+  height: 55%;
+  margin-top:20px;
 }
 .connect-container {
   height: 100%;
