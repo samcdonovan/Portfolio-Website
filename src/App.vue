@@ -197,10 +197,6 @@ body {
 }
 #app {
   font-family: Arial, Helvetica, sans-serif;
-  /*
-  font-family: "Lucida Console", "Courier New", monospace;
-  */
-  /*font-family: sans-serif, Brush Script MT (cursive), Avenir, Helvetica, Arial;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
@@ -211,9 +207,6 @@ body {
   font-size: 110%;
   align-items: stretch;
   margin-bottom: 10vh;
-  /*
-  background-color:#282828;
-  */
 }
 .header {
   width: 80%;
@@ -232,7 +225,6 @@ body {
   font-size: calc(2.5vh + 2vw);
 }
 #nav-bar {
-  padding-top: 1%;
   border-bottom: 3px solid var(--underline-color);
   border-radius: 0 0 30% 30%;
   padding-bottom: 0;
@@ -253,7 +245,7 @@ body {
 }
 #site-title {
   font-size: calc(3vh + 2vw);
-  height: 10vh + 10vw;
+  height: 9vh + 9vw;
   z-index: 2;
 }
 #site-title p {
@@ -261,7 +253,7 @@ body {
 }
 .menu {
   width: 65%;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   margin-left: auto;
   margin-right: auto;
