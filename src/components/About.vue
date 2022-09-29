@@ -44,7 +44,7 @@
             of this website.
           </p>
         </div>
-        <img src="../assets/interests-pic.jpg" />
+        <div id="interests-img"><img src="../assets/interests-pic.jpg" /></div>
       </div>
       <div class="connect-container"><div class="connector"></div></div>
       <div id="experience">
@@ -999,6 +999,7 @@ export default {
 }
 .about-container {
   width: 100%;
+  height: 100vh;
 }
 .about-body {
   padding: 2%;
@@ -1006,6 +1007,7 @@ export default {
   display: inline-block;
   position: relative;
   width: 70%;
+  height: 100%;
   float: left;
   overflow: visible;
 }
@@ -1036,7 +1038,8 @@ h2,
 }
 #interests {
   width: 100%;
-  height: 100%;
+  min-height: 55%;
+  height:fit-content;
   border-style: solid;
   padding: 3%;
   padding-top: 0;
@@ -1045,20 +1048,35 @@ h2,
   margin-left: auto;
   margin-right: auto;
   background-color: var(--nav-bg);
-  overflow:auto;
+  overflow: auto;
+   display:flex;
 }
 #interests-body {
   float: left;
   width: 55%;
   height: 100%;
 }
-#interests img {
+#interests-img {
   width: 35%;
-  height: 55%;
-  margin-top:20px;
+  height: 100%;
+  margin-top:auto;
+  margin-bottom:auto;
+  left:10%;
+  float: right;
+  text-align: center;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+#interests-img img {
+  width: 100%;
+  height: 55%; 
+  margin-top:1%;
 }
 .connect-container {
-  height: 100%;
+  height: 5%;
   background-image: linear-gradient(var(--text-color), var(--text-color));
   background-size: 2px 100%;
   background-repeat: no-repeat;
@@ -1072,7 +1090,7 @@ h2,
 }
 
 #experience {
-  height: 50%;
+  height: 100%;
   width: 90%;
   position: relative;
   border-style: solid;
@@ -1084,7 +1102,6 @@ h2,
 #experience-1,
 #experience-2 {
   width: 49%;
-  height: 100%;
   text-align: left;
 }
 
@@ -1099,11 +1116,11 @@ h2,
 @media (max-width: 960px) {
   .sidebar {
     visibility: hidden;
-    position:absolute;
-    height:0;
+    position: absolute;
+    height: 0;
   }
-  .about-container{
-    width:100%;
+  .about-container {
+    width: 100%;
   }
   .about-body {
     width: 90%;
@@ -1130,8 +1147,8 @@ h2,
   }
   #experience {
     width: 103%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   #experience-1 ul,
   #experience-2 ul {
